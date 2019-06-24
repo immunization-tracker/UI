@@ -133,12 +133,21 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
 }
+h1 {
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 2rem;
+}
 .container {
+  border: 1px solid black;
   width: 1000px;
   margin: 0 auto;
   font-size: 1.6rem;
 }
 header {
+  border: 1px solid black;
+  background: linear-gradient(to right, #ffffff, #9ca8b3);
   display: flex;
   justify-content: space-between;
   margin: 25px 0;
@@ -146,14 +155,18 @@ header {
 header .logo {
   width: 100px;
   height: 100px;
+  margin: 20px;
 }
 header .nav-main {
+  border: 1px solid black;
   width: 100%;
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  align-content: center;
 }
 header a {
+  border: 1px solid black;
   width: 100%;
   text-decoration: none;
   color: black;
