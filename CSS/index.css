@@ -147,7 +147,7 @@ h2 {
 }
 header {
   border: 1px solid black;
-  background: linear-gradient(to right, #ffffff, #9ca8b3);
+  background: linear-gradient(to right, #ffffff, #80a6c9);
   display: flex;
   justify-content: space-between;
   margin: 25px 0;
@@ -175,9 +175,6 @@ header a {
 .cta {
   display: flex;
   flex-direction: column;
-}
-.cta h1 {
-  font-size: 2.4rem;
 }
 .cta-img {
   width: 100%;
