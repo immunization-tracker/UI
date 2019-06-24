@@ -147,11 +147,11 @@ h2 {
 }
 header {
   border: 1px solid black;
-  background-color: white;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  margin-top: 0;
+  background-color: white;
+  opacity: 0.8;
 }
 header .logo {
   width: 100px;
@@ -167,7 +167,6 @@ header .nav {
 }
 header a {
   border: 1px solid black;
-  width: 100%;
   text-decoration: none;
   color: black;
   padding: 0 25px;
@@ -176,9 +175,18 @@ header a {
   display: flex;
   flex-direction: column;
 }
-.cta-img {
-  border: 1px solid black;
+.cta .cta-img {
   width: 100%;
   margin: 0 auto;
   height: auto;
+}
+.main-content h2 {
+  padding: 20px 0 20px 0;
+}
+.main-content p {
+  padding: 0 0 20px 0;
+}
+footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
