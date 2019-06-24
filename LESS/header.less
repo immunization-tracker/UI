@@ -1,31 +1,34 @@
 header{
     border: 1px solid black;
-    background: linear-gradient(to right,  #ffffff, rgb(128, 166, 201));
     display: flex;
     justify-content: space-between;
-    margin: 25px 0;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.8;
+    // width:100%;
 
     .logo {
         width: 100px;
         height: 100px;
-        margin: 20px;
+        border: 1px solid red;
     }
 
-    .nav-main{
+    .nav{
         border: 1px solid black;
-       width:100%;
-       display:flex;
-       list-style: none;
-       justify-content: flex-end;
-       align-content: center;       
+        width:100%;
+        display:flex;
+        list-style: none;
+        //justify-content: flex-end;
+        align-content: center;
     }
 
     a{  
         border: 1px solid black;
-        width: 100%;
         text-decoration: none;
         color: black;
-        padding: 0 35px;
+        padding: 0 25px;
     }
 }
 

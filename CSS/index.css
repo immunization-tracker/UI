@@ -140,43 +140,56 @@ h2 {
   font-size: 2rem;
 }
 .container {
-  border: 1px solid black;
+  margin-top: 50px;
+  border: 1px solid red;
   width: 1000px;
   margin: 0 auto;
   font-size: 1.6rem;
 }
 header {
   border: 1px solid black;
-  background: linear-gradient(to right, #ffffff, #80a6c9);
   display: flex;
   justify-content: space-between;
-  margin: 25px 0;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.8;
 }
 header .logo {
   width: 100px;
   height: 100px;
-  margin: 20px;
+  border: 1px solid red;
 }
-header .nav-main {
+header .nav {
   border: 1px solid black;
   width: 100%;
   display: flex;
   list-style: none;
-  justify-content: flex-end;
   align-content: center;
 }
 header a {
   border: 1px solid black;
-  width: 100%;
   text-decoration: none;
   color: black;
-  padding: 0 35px;
+  padding: 0 25px;
 }
 .cta {
   display: flex;
   flex-direction: column;
 }
-.cta-img {
+.cta .cta-img {
   width: 100%;
-  height: 300px;
+  margin: 0 auto;
+  height: auto;
+}
+.main-content h2 {
+  padding: 20px 0 20px 0;
+}
+.main-content p {
+  padding: 0 0 20px 0;
+}
+footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
