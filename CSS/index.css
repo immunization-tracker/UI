@@ -159,8 +159,10 @@ header {
   background-color: white;
   position: fixed;
   top: 0;
+  margin-left: -1px;
   opacity: 0.8;
   width: 100%;
+  max-width: 1000px;
 }
 header .logo {
   width: 50px;
