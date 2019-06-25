@@ -167,7 +167,6 @@ header {
 header .logo {
   width: 50px;
   height: 50px;
-  border: solid red 1px;
 }
 header nav {
   border: solid black 1px;
@@ -177,10 +176,9 @@ header nav {
   align-content: center;
 }
 header a {
-  border: solid black 1px;
   text-decoration: none;
   color: black;
-  padding: 0 25px;
+  margin: 0 25px;
 }
 header .langnav {
   display: flex;
@@ -193,6 +191,10 @@ header .langnav {
 }
 header .language {
   margin-top: 1rem;
+}
+footer {
+  padding: 20px 0 20px 0;
+  text-align: center;
 }
 .cta {
   display: flex;
@@ -207,12 +209,8 @@ header .language {
   height: auto;
 }
 .main-content h2 {
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 .main-content p {
-  padding: 0 0 20px 0;
-}
-footer {
-  padding: 20px 0 20px 0;
-  text-align: center;
+  padding: 0 0 20px;
 }
