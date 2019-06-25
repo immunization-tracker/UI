@@ -183,6 +183,7 @@ header .login {
   width: 5%;
   border: 1px solid black;
   font-size: 1.6rem;
+  margin: 15px;
 }
 .cta {
   display: flex;
@@ -202,6 +203,7 @@ header .login {
   -webkit-text-stroke-width: 2.5px;
   align-self: center;
   margin-bottom: 100px;
+  z-index: 100;
 }
 .main-content {
   border: 1px solid blue;
@@ -226,6 +228,9 @@ header .login {
   border: 1px solid green;
   display: flex;
   justify-items: center;
+}
+.main-content .section .drop-down {
+  display: none;
 }
 footer {
   padding: 20px 0 20px 0;
