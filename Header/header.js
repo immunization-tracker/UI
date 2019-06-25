@@ -24,8 +24,8 @@
 
  
 const dropdown = document.querySelectorAll('.dropdown-links')
-console.log(dropdown.classList)
-
+console.log(dropdown)
+const dropdownLinks = dropdown.classList('dropdown-links')
 
 dropdown.addEventListener('click', event => dropdownLinks.style.display = 'block') 
 
