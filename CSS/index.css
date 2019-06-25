@@ -142,34 +142,28 @@ h2 {
 .container {
   margin-top: 50px;
   border: 1px solid red;
-  width: 1000px;
+  width: 100vw;
   margin: 0 auto;
   font-size: 1.6rem;
 }
 header {
   border: 1px solid black;
   display: flex;
+  align-content: center;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
   background-color: white;
   opacity: 0.8;
 }
 header .logo {
-  width: 100px;
+  margin: 15px;
   height: 100px;
-  border: 1px solid red;
 }
 header .nav {
-  border: 1px solid black;
-  width: 100%;
   display: flex;
-  list-style: none;
   align-content: center;
+  justify-content: center;
 }
 header a {
-  border: 1px solid black;
   text-decoration: none;
   color: black;
   padding: 0 25px;
@@ -179,15 +173,43 @@ header a {
   flex-direction: column;
 }
 .cta .cta-img {
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
+  margin-bottom: -100px;
+  opacity: 0.7;
 }
-.main-content h2 {
-  padding: 20px 0 20px 0;
+.cta h1 {
+  font-size: 5rem;
+  color: black;
+  align-self: center;
+  margin-bottom: 100px;
+  z-index: 100;
 }
-.main-content p {
-  padding: 0 0 20px 0;
+.main-content {
+  border: 1px solid blue;
+  display: flex;
+}
+.main-content .main-intro {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .main-intro p {
+  align-self: center;
+  font-size: 3rem;
+}
+.main-content .main-intro h2 {
+  align-self: center;
+  font-size: 3.25rem;
+  margin-right: 80px;
+}
+.main-content .section {
+  display: flex;
+  border: 1px solid red;
+}
+.main-content .section .tabs {
+  border: 1px solid green;
+  display: flex;
+  justify-items: center;
 }
 footer {
   padding: 20px 0 20px 0;
