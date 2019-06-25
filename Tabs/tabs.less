@@ -25,20 +25,24 @@
         .tabs-link-selected {
           z-index: 2;
           color: lightseagreen;
-          border-bottom: 1px solid lightseagreen;
+          border-bottom: 1px solid @green;
           &:hover {
-          background-color: lightseagreen;
+          background-color: @green;
           color: white;
           }
         }
       }      
-    }    
+    }
+    
     
   .tabs-items {
     width: 100%;
     height: auto;
     display: flex;
-    overflow: scroll;  
+    overflow: scroll;
+    @media @phone {
+      flex-direction: column-reverse;
+    }  
 
     .tabs-item {
       display: none;  
@@ -46,6 +50,9 @@
       width: 25%;
       margin: 25px 15px 25px 35%;
       transition: all .3s ease-in-out;
+      @media @phone {
+        width: 75%;
+      } 
       
       .tabs-item-title {
         font-size: 2.4rem;
@@ -56,7 +63,7 @@
       .regBtn {
         border: none;
         color: white;
-        background-color: lightseagreen;
+        background-color: @green;
         margin-top: 15px;
         padding: 5px 10px;
       }
