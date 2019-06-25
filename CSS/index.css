@@ -179,21 +179,18 @@ header nav {
 header nav a {
   justify-content: space-between;
   text-decoration: none;
-  color: black;
+  color: grey;
   padding: 0 25px;
   margin-left: 2rem;
 }
 header nav a:hover {
+  color: black;
   text-decoration: underline;
 }
 header .dropdown {
   display: flex;
   flex-direction: row;
   width: 30%;
-}
-header .dropdown .dropdown-button {
-  border: 2px solid black;
-  padding: 0 20px 0 10px;
 }
 header .dropdown .dropdown-button:hover {
   background-color: black;
@@ -208,10 +205,9 @@ header .dropdown .dropdown-button a:hover {
 }
 header .dropdown .dropdown-links {
   width: 100%;
-  border: 1px solid red;
   flex-direction: column;
   flex-direction: row;
-  display: none;
+  display: flex;
   padding-left: 10px;
   justify-content: space-evenly;
 }
@@ -221,6 +217,9 @@ header .dropdown .dropdown-links a {
 }
 header .dropdown .dropdown-links a:hover {
   text-decoration: underline;
+}
+header .dropdown .dropdown-hidden {
+  display: none;
 }
 .cta {
   display: flex;
@@ -329,9 +328,11 @@ footer {
   padding-bottom: 10px;
 }
 .section .tabs-items .tabs-item .regBtn {
-  border: 1px solid black;
+  border: none;
   color: white;
   background-color: lightseagreen;
+  margin-top: 15px;
+  padding: 5px 10px;
 }
 .section .tabs-items .tabs-item-selected {
   display: block;
