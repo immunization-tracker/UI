@@ -1,28 +1,46 @@
 header{
+    width:100%;
     border: 1px solid black;
-    display: flex;
-    align-content: center;
+    //.flex();
     justify-content: space-between;
     background-color: white;
-    opacity: 0.8;
-
-
+    display:flex;
+    // opacity: 0.8;
+    position: fixed;
+    top:0;
+    margin-left: -1px;
     .logo {
-        margin: 15px;
-        height: 100px;
+        //margin: 15px;
+        width: 10%;
+        height: 7rem;
+        .box(red);
     }
-
-    .nav{
-        display:flex;
-        align-content: center;
+    nav{
+        width:100%;
+        display: flex;
+        align-items: flex-end;
         justify-content: center;
-    }
 
-    a{  
+        // .flex();
+
+        a{  
+        justify-content: space-between;
+        border: 1px solid blue;
         text-decoration: none;
         color: black;
         padding: 0 25px;
+        margin-left: 2rem;
+        }
     }
+    .login{
+        width: 5%;
+        border: 1px solid black;
+        font-size: 1.6rem;
+        margin: 15px;
+        }
+    .drop-down{
+        display: none;
+    }    
 }
 
     
