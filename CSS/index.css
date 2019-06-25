@@ -139,11 +139,15 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+p,
+a {
+  font-size: 1.6rem;
+}
 .container {
   border: solid red 1px;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  font-size: 1.6rem;
 }
 header {
   border: solid black 1px;
