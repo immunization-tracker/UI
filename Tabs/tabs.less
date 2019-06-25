@@ -37,28 +37,40 @@
     width: 100%;
     height: auto;
     display: flex;
-    padding: 60px;
-    overflow: scroll;
-
-      .tabs-col1 {
-        width: 25%;
-        left: 0;
-      }
+    overflow: scroll;  
 
     .tabs-item {
       display: none;  
-      width: 50%;
-      left: 25%;
+      height: auto;
+      width: 25%;
+      margin: 25px 15px 25px 35%;
+      transition: all .3s ease-in-out;
+      
       .tabs-item-title {
         font-size: 2.4rem;
         font-weight: bold;
         padding-bottom: 10px;
       }
+
+      .regBtn {
+        border: 1px solid black;
+        color: white;
+        background-color: lightseagreen;
+      }
     }
+    
     .tabs-item-selected {
       display: block;
     }
-  }  
+  } 
+  
+  .selection-img {
+    margin: 5px 0;
+    max-height: 300px;
+    max-width: 300px;
+    height: auto;
+    width: auto;
+  }
 }
 
   
