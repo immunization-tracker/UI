@@ -4,16 +4,26 @@
     flex-direction: column;
        
     .main-intro {
+        margin-top: 50px;
+
+        @media @tablet {
+            
+        }
+
+        @media @phone {
+            
+        }
 
         p {
-            align-self: center;
-            font-size: 3rem;
+            text-align: center;
+            font-size: 2rem;
+            margin-right: 15%;
         }
     
         h2 {
-            align-self: center;
-            font-size: 3.25rem;
-            margin-right: 80px;
+            text-align: center;
+            font-size: 3rem;
+            margin-right: 20%;
         }
     }    
 
@@ -21,13 +31,6 @@
         display: flex;
         flex-direction: column;
         .box(red);
-
-        .tabs {
-            .box(green);
-            display: flex;
-            justify-items: center;
-        }
-       
     }
 
 }
