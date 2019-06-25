@@ -1,5 +1,13 @@
 // @@@@@@@@@@@@@@@@@@@@ Mixins @@@@@@@@@@@@@@@@@@@@
 
-.box(@bc:black){
-    border-color:@bc
+.box(@bc){
+    border: solid  1px;
+    border-color: @bc;
+}
+
+.flex() {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
