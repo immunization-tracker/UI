@@ -1,33 +1,36 @@
 .main-content {
-    border: 1px solid blue;
+    .box(blue);
     display: flex;
     flex-direction: column;
        
     .main-intro {
+        margin-top: 50px;
+
+        @media @tablet {
+            
+        }
+
+        @media @phone {
+            
+        }
 
         p {
-            align-self: center;
-            font-size: 3rem;
+            text-align: center;
+            font-size: 2rem;
+            margin-right: 15%;
         }
     
         h2 {
-            align-self: center;
-            font-size: 3.25rem;
-            margin-right: 80px;
+            text-align: center;
+            font-size: 3rem;
+            margin-right: 20%;
         }
     }    
 
     .section {
         display: flex;
         flex-direction: column;
-        border: 1px solid red;
-
-        .tabs {
-            border: 1px solid green;
-            display: flex;
-            justify-items: center;
-        }
-       
+        .box(red);
     }
 
 }

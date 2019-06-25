@@ -9,38 +9,32 @@ header{
     position: fixed;
     top:0;
     margin-left: -1px;
+
+    @media @phone {
+        flex-direction: column;
+    }
+
     .logo {
-        //margin: 15px;
+        margin: 15px;
         width: 10%;
         height: 7rem;
         .box(red);
     }
+    
     nav{
         width:100%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
-
-        // .flex();
-
+        //.flex();
+        display:flex;
         a{  
-        justify-content: space-between;
-        border: 1px solid blue;
-        text-decoration: none;
-        color: black;
-        padding: 0 25px;
-        margin-left: 2rem;
+            justify-content: space-between;
+            .box(blue);
+            text-decoration: none;
+            color: black;
+            padding: 0 25px;
+            margin-left: 2rem;
         }
     }
-    .login{
-        width: 5%;
-        border: 1px solid black;
-        font-size: 1.6rem;
-        margin: 15px;
-        }
-    .drop-down{
-        display: none;
-    }    
 }
-
-    
