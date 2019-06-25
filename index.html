@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="./Tabs/Tabs.js" async></script>
+    <script src="./Header/header.js" async></script>
 </head>
 
 <header>
@@ -16,11 +17,16 @@
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">CONTACT</a>
-        <div class='dropdown'>  
-            <a href="#">Provider Login</a>
-            <a href="#">Patient Login</a>
-         </div>
     </nav>
+
+    <div class='dropdown'>
+        <div class="dropdown-button"><a href='#'>Login</a> </div>  
+            <div class="dropdown-links dropdown-hidden">
+                <a href="#">Provider Login</a>
+                <a href="#">Patient Login</a>
+            </div>
+        </div>
+    </div>
 </header>
 
 <body class='container'>
@@ -31,8 +37,7 @@
 
     <div class="main-content">
         <div class="main-intro">
-            <p>WHAT IS</p>
-            <h2>YOUR ROLE?</h2>
+            <h2>- YOU ARE A -</h2>
         </div>
         
         <div class="section">
@@ -47,17 +52,29 @@
 
             <div class="tabs-items">
                 <div class="tabs-item tabs-item-selected" data-tab="1">
-                    <div class="tabs-item-title">PARENT</div>
-                    <div class="tabs-item-description">First Tab Content</div>
+                    <div class='tabs-text'>
+                        <h3 class="tabs-item-title">PARENT</h3>
+                        <p class="tabs-item-description">You will be able to view all of your children's immunization records all on one page. Keep track of any and all missing vaccinations that your child may need in the future! Grant access to your child's physician to update the history and be able to see the details in an uploaded document.</p>
+                    </div>
+                    <button class="regBtn parent">REGISTER TODAY!</button>
                 </div>
-                <div class="tabs-item tabs-item-selected" data-tab="2">
-                    <div class="tabs-item-title">PATIENT</div>
-                    <div class="tabs-item-description">Second Tab Content</div>
+
+                <div class="tabs-item" data-tab="2">
+                    <div class='tabs-text'>
+                        <h3 class="tabs-item-title">PATIENT</h3>
+                        <p class="tabs-item-description">You will be able to view your immunization history all on one page. Give your doctor the permission to upload new records into your account when you get a new vaccine. Going on vacation? Check out a list of recommended vaccinations you will want before you go overseas!</p>
+                    </div>
+                    <button class="regBtn pt">REGISTER TODAY!</button>
                 </div>
-                <div class="tabs-item tabs-item-selected" data-tab="3">
-                    <div class="tabs-item-title">PROVIDER</div>
-                    <div class="tabs-item-description">Third Tab Content</div>
-                </div>
+
+                <div class="tabs-item" data-tab="3">
+                    <div class='tabs-text'>
+                        <h3 class="tabs-item-title">PROVIDER</h3>
+                        <p class="tabs-item-description">You will have the ability to view the immunization histories of all of your patients. Keep track of any missing immunizations and be able to administer those shots during your patient's next appointment. Create and upload new records into your patient's account for them to view later.</p>
+                    </div>
+                    <button class="regBtn provider">REGISTER TO UPLOAD AND TRACK IMMUNIZATIONS</button>
+                </div> 
+                <img class="selection-img" src="../Images/pediatric.jpg" alt="a smiling pediatrician engaging a child">                           
             </div>
         </div>
     </div>
