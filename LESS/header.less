@@ -10,15 +10,21 @@ header{
     margin-left: -1px;
     align-items:baseline;
     z-index: 2;
-
-    @media @phone {
+    background:linear-gradient(#f79d00, lightseagreen);
+    padding-bottom:10px;
+    @media @tablet{
         flex-direction: column;
+        
     }
-
     .logo {
         margin-top:15px;
         width: 10%;
         height: 7rem;
+        @media @tablet{
+            width: 100%;
+            margin-top:0;
+            
+        }
     }
     
     nav{
@@ -27,33 +33,45 @@ header{
         justify-content: flex-start;
         //.flex();
         display:flex;
+        @media @tablet{
+            flex-direction: column;
+            align-items: center;
+        }
         a{  
             justify-content: space-between;
             text-decoration: none;
-            color: grey;
+            color: white;
             padding: 0 25px;
             margin-left: 2rem;
             &:hover{
                 color: black;
                 text-decoration: underline;
             }
+            @media @tablet{
+                margin:0;
+                width:90%;
+                padding: 10px 0 10px 0;
+                text-align: center;
+                color:black;
+                border-bottom: 1px solid black;
         }
     }
     .dropdown{
         display: flex;
         flex-direction: row;
-        width: 30%;
+        width: 100%;
         
         .dropdown-button{
-            &:hover{
-                background-color: black;
+            @media @tablet{
+                display:none;
             }
             a{
                 text-decoration: none;
-                color: black;
+                color: white;
                 font-size: 2rem;
                 &:hover{
-                    color: white;
+                    color: black;
+                    text-decoration: underline;
                 }
             }
         }
@@ -64,6 +82,11 @@ header{
             display: flex;
             padding-left: 10px;
             justify-content: space-evenly;
+            @media @tablet{
+                width:90%;
+                margin:0 auto;
+                padding-left: 0;
+            }
             a{
                 text-decoration: none;
                 color: black;
@@ -74,6 +97,11 @@ header{
             }
             .dropdown-hidden{
                 display:none;
+                @media @tablet{
+                    display:flex;
+                }
+            
             }
     }
+}
 }

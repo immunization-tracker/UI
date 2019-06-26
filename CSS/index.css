@@ -159,8 +159,10 @@ header {
   margin-left: -1px;
   align-items: baseline;
   z-index: 2;
+  background: linear-gradient(#f79d00, lightseagreen);
+  padding-bottom: 10px;
 }
-@media (max-width:500px) {
+@media (max-width:800px) {
   header {
     flex-direction: column;
   }
@@ -170,16 +172,28 @@ header .logo {
   width: 10%;
   height: 7rem;
 }
+@media (max-width:800px) {
+  header .logo {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 header nav {
   width: 100%;
   align-items: flex-end;
   justify-content: flex-start;
   display: flex;
 }
+@media (max-width:800px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header nav a {
   justify-content: space-between;
   text-decoration: none;
-  color: grey;
+  color: white;
   padding: 0 25px;
   margin-left: 2rem;
 }
@@ -187,23 +201,36 @@ header nav a:hover {
   color: black;
   text-decoration: underline;
 }
-header .dropdown {
+@media (max-width:800px) {
+  header nav a {
+    margin: 0;
+    width: 90%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+}
+header nav .dropdown {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 100%;
 }
-header .dropdown .dropdown-button:hover {
-  background-color: black;
+@media (max-width:800px) {
+  header nav .dropdown .dropdown-button {
+    display: none;
+  }
 }
-header .dropdown .dropdown-button a {
+header nav .dropdown .dropdown-button a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 2rem;
 }
-header .dropdown .dropdown-button a:hover {
-  color: white;
+header nav .dropdown .dropdown-button a:hover {
+  color: black;
+  text-decoration: underline;
 }
-header .dropdown .dropdown-links {
+header nav .dropdown .dropdown-links {
   width: 100%;
   flex-direction: column;
   flex-direction: row;
@@ -211,15 +238,27 @@ header .dropdown .dropdown-links {
   padding-left: 10px;
   justify-content: space-evenly;
 }
-header .dropdown .dropdown-links a {
+@media (max-width:800px) {
+  header nav .dropdown .dropdown-links {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+header nav .dropdown .dropdown-links a {
   text-decoration: none;
   color: black;
 }
-header .dropdown .dropdown-links a:hover {
+header nav .dropdown .dropdown-links a:hover {
   text-decoration: underline;
 }
-header .dropdown .dropdown-hidden {
+header nav .dropdown .dropdown-hidden {
   display: none;
+}
+@media (max-width:800px) {
+  header nav .dropdown .dropdown-hidden {
+    display: flex;
+  }
 }
 .cta {
   display: flex;
@@ -232,6 +271,11 @@ header .dropdown .dropdown-hidden {
   max-height: auto;
   opacity: 0.7;
   z-index: -1;
+}
+@media (max-width:800px) {
+  .cta .cta-img {
+    margin-top: 125px;
+  }
 }
 .cta h1 {
   font-size: 4.5rem;
