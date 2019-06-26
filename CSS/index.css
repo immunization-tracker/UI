@@ -170,13 +170,14 @@ header {
 }
 header .button-mobile {
   margin-left: 10px;
-  display: none;
+  display: flex;
   margin-top: 10px;
   width: 50px;
 }
 @media (max-width: 500px) {
   header .button-mobile {
     display: flex;
+    width: 40px;
     border: solid  1px;
     border-color: black;
   }
@@ -338,7 +339,7 @@ header #google_translate_element {
 }
 .carousel .img-reveal {
   display: block;
-  animation: fadeIn 2s;
+  animation: fadeIn 5s;
 }
 @keyframes fadeIn {
   0% {
@@ -411,11 +412,6 @@ footer p {
   display: flex;
   overflow: scroll;
 }
-@media (max-width: 500px) {
-  .section .tabs-items {
-    flex-direction: column-reverse;
-  }
-}
 .section .tabs-items .tabs-item {
   display: none;
   height: auto;
@@ -423,43 +419,24 @@ footer p {
   margin: 25px 15px 25px 35%;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item {
-    width: 75%;
-    margin: 10px auto;
-  }
-}
 .section .tabs-items .tabs-item .tabs-item-title {
   color: gray;
   font-size: 2.1rem;
   padding-bottom: 10px;
-}
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-title {
-    text-align: center;
-  }
 }
 .section .tabs-items .tabs-item .tabs-item-description {
   color: gray;
   font-size: 1.7rem;
   line-height: 2rem;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-description {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-  }
-}
-@m .regBtn {
+.section .tabs-items .tabs-item .regBtn {
   border: none;
   color: white;
   background-color: #20b2aa;
   margin-top: 15px;
   padding: 5px 10px;
-  justify-self: center;
 }
-.section .tabs-items .tabs-item-selected {
+.section .tabs-items .tabs-item .tabs-item-selected {
   display: block;
 }
 .section .selection-img {
