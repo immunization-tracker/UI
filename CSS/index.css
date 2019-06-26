@@ -162,7 +162,7 @@ header {
   background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header {
     flex-direction: column;
     padding-bottom: 0;
@@ -170,13 +170,14 @@ header {
 }
 header .button-mobile {
   margin-left: 10px;
-  display: none;
+  display: flex;
   margin-top: 10px;
   width: 50px;
 }
 @media (max-width: 500px) {
   header .button-mobile {
     display: flex;
+    width: 40px;
     border: solid  1px;
     border-color: black;
   }
@@ -186,7 +187,7 @@ header .logo {
   width: 10%;
   height: 7rem;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header .logo {
     width: 100%;
     margin-top: 0;
@@ -203,7 +204,7 @@ header nav {
   justify-content: flex-start;
   display: flex;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav {
     flex-direction: column;
     align-items: center;
@@ -221,7 +222,7 @@ header nav a:hover {
   color: black;
   text-decoration: underline;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav a {
     margin: 0;
     width: 90%;
@@ -236,7 +237,7 @@ header nav .dropdown {
   flex-direction: row;
   width: 100%;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-button {
     display: none;
   }
@@ -259,7 +260,7 @@ header nav .dropdown .dropdown-links {
   padding-left: 10px;
   justify-content: flex-start;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-links {
     width: 90%;
     margin: 0 auto;
@@ -271,7 +272,7 @@ header nav .dropdown .dropdown-links a {
   color: black;
   cursor: pointer;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-links a {
     color: black;
   }
@@ -283,7 +284,7 @@ header nav .dropdown .dropdown-links a:hover {
 header nav .dropdown .dropdown-hidden {
   display: none;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-hidden {
     display: flex;
   }
@@ -293,7 +294,7 @@ header #google_translate_element {
   top: 0;
   left: 800px;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header #google_translate_element {
     left: 560px;
     text-decoration: none;
@@ -311,7 +312,7 @@ header #google_translate_element {
   z-index: -1;
   display: none;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .cta .cta-img {
     margin-top: 125px;
   }
@@ -325,7 +326,7 @@ header #google_translate_element {
   margin-top: -50px;
   z-index: 2;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .cta h1 {
     font-size: 3.5rem;
     -webkit-text-stroke-width: 1px;
@@ -411,11 +412,6 @@ footer p {
   display: flex;
   overflow: scroll;
 }
-@media (max-width: 500px) {
-  .section .tabs-items {
-    flex-direction: column-reverse;
-  }
-}
 .section .tabs-items .tabs-item {
   display: none;
   height: auto;
@@ -423,41 +419,22 @@ footer p {
   margin: 25px 15px 25px 35%;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item {
-    width: 75%;
-    margin: 10px auto;
-  }
-}
-.section .tabs-items .tabs-item .tabs-item-title {
+.section .tabs-items .tabs-item .tabs-text .tabs-item-title {
   color: gray;
   font-size: 2.1rem;
   padding-bottom: 10px;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-title {
-    text-align: center;
-  }
-}
-.section .tabs-items .tabs-item .tabs-item-description {
+.section .tabs-items .tabs-item .tabs-text .tabs-item-description {
   color: gray;
   font-size: 1.7rem;
   line-height: 2rem;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-description {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-  }
-}
-@m .regBtn {
+.section .tabs-items .tabs-item .regBtn {
   border: none;
   color: white;
   background-color: #20b2aa;
   margin-top: 15px;
   padding: 5px 10px;
-  justify-self: center;
 }
 .section .tabs-items .tabs-item-selected {
   display: block;
@@ -471,11 +448,6 @@ footer p {
   height: auto;
   width: auto;
   transition: all 0.5s ease-in-out;
-}
-@media (max-width: 500px) {
-  .section .selection-img {
-    margin: 10px auto;
-  }
 }
 .team {
   margin-top: 20px;
