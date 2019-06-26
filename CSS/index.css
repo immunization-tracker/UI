@@ -436,7 +436,7 @@ footer p {
   margin-top: 15px;
   padding: 5px 10px;
 }
-.section .tabs-items .tabs-item-selected {
+.section .tabs-items .tabs-item .tabs-item-selected {
   display: block;
 }
 .section .selection-img {
