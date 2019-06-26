@@ -348,7 +348,7 @@ header #google_translate_element {
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0.2;
   }
   100% {
     opacity: 0.8;
