@@ -304,7 +304,6 @@ header #google_translate_element {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
-  margin-bottom: 100;
 }
 .cta .cta-img {
   width: 100%;
@@ -323,18 +322,24 @@ header #google_translate_element {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
   align-self: center;
-  margin-top: -50px;
+  margin-top: -5.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
   z-index: 2;
 }
 @media (max-width:800px) {
   .cta h1 {
     font-size: 3.5rem;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 1.2px;
+    margin-top: -4.5rem;
   }
 }
 @media (max-width: 500px) {
   .cta h1 {
     font-size: 2.5rem;
+    -webkit-text-stroke-width: 1px;
+    margin-top: -3.5rem;
   }
 }
 .carousel .img-reveal {
