@@ -159,7 +159,7 @@ header {
   margin-left: -1px;
   align-items: baseline;
   z-index: 2;
-  background: linear-gradient(#f79d00, lightseagreen);
+  background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
 @media (max-width:800px) {
@@ -194,7 +194,7 @@ header nav {
 header nav a {
   justify-content: space-between;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 0 25px;
   margin-left: 2rem;
   cursor: pointer;
@@ -225,7 +225,7 @@ header nav .dropdown {
 }
 header nav .dropdown .dropdown-button a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -239,7 +239,7 @@ header nav .dropdown .dropdown-links {
   flex-direction: row;
   display: flex;
   padding-left: 10px;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 @media (max-width:800px) {
   header nav .dropdown .dropdown-links {
@@ -250,7 +250,7 @@ header nav .dropdown .dropdown-links {
 }
 header nav .dropdown .dropdown-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 @media (max-width:800px) {
@@ -397,4 +397,45 @@ footer {
   max-width: 300px;
   height: auto;
   width: auto;
+}
+.team {
+  margin-top: 20px;
+  background: white;
+  border: 2px solid #f79d00;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin-top: 150px;
+  text-align: center;
+}
+.team-members {
+  width: 100%;
+  border: solid  1px;
+  border-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-members .person {
+  margin-left: 20px;
+  position: relative;
+}
+.team-members .person img {
+  width: 300px;
+}
+.team-members .person img:hover {
+  filter: brightness(50%);
+}
+.team-members .person .team-design {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.team-members .person .team-design h4 {
+  font-size: 2rem;
+  color: white;
+}
+.team-members .person .hidden-text {
+  display: none;
 }
