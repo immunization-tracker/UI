@@ -24,10 +24,10 @@
   
         .tabs-link-selected {
           z-index: 2;
-          color: @blue;
-          border-bottom: 1px solid @blue;
+          color: @green;
+          border-bottom: 1px solid @green;
           &:hover {
-          background-color: @blue;
+          background-color: @green;
           color: white;
           }
         }
@@ -52,42 +52,61 @@
       transition: all .3s ease-in-out;
       @media @phone {
         width: 75%;
+        margin: 10px auto;
       } 
       
       .tabs-item-title {
         color: gray;
         font-size: 2.1rem;
         padding-bottom: 10px;
+        @media @phone {
+          text-align: center;
+        } 
       }
 
       .tabs-item-description {
         color: gray;
         font-size: 1.7rem;
         line-height: 2rem;
+        @media @phone {
+          display:table-cell;
+          text-align:center;
+          vertical-align:middle;
+        }
       }
 
-      .regBtn {
-        border: none;
-        color: white;
-        background-color: @blue;
-        margin-top: 15px;
-        padding: 5px 10px;
-        justify-self: center;
-      }
+      .regBtn-wrapper {
+        @m
+        .regBtn {
+          border: none;
+          color: white;
+          background-color: @green;
+          margin-top: 15px;
+          padding: 5px 10px;
+          justify-self: center;
+        }
+
+      } 
     }
-    
+
+      
     .tabs-item-selected {
       display: block;
     }
   } 
   
   .selection-img {
-    border: 1px solid @blue;
+    border: 1px solid @green;
     margin: 5px 0;
+    opacity: .9;    
     max-height: 300px;
-    max-width: 300px;
+    max-width: 300px;    
     height: auto;
     width: auto;
+    transition: all .5s ease-in-out;
+    @media @phone {
+      margin: 10px auto;
+    }
   }
 }
 

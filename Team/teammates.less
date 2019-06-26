@@ -1,0 +1,42 @@
+.team{
+    margin-top:20px;
+    background: white;
+    border: 2px solid #f79d00;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top:150px;
+    text-align: center;
+}
+
+.team-members{
+    width:100%;
+    .box(black);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    .person{
+        margin-left: 20px;
+        position:relative;
+        img{
+            width:300px;
+            &:hover{
+                filter: brightness(50%);
+            }
+        }
+        .team-design{
+            position:absolute;
+            top: 100px;
+            left: 100px;
+            h4{
+                font-size:2rem;
+                color:white;
+            }
+        }
+        .hidden-text{
+            display:none;
+        }
+    }
+}
