@@ -61,10 +61,11 @@ class TabLink {
       const items = document.querySelectorAll('.tabs-item')
   
       // Removes the class "tabs-item-selected" from each element
-      items.forEach(item => item.classList.remove('selected'))
+      items.forEach(item => item.classList.remove('tabs-item-selected'))
+      
       
       // Adds a class named "tabs-item-selected" to this element
-      this.item.classList.add('selected')
+      this.item.classList.add('tabs-item-selected')
     }
   }
   
