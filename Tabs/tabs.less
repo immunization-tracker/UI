@@ -24,10 +24,10 @@
   
         .tabs-link-selected {
           z-index: 2;
-          color: lightseagreen;
-          border-bottom: 1px solid @green;
+          color: @blue;
+          border-bottom: 1px solid @blue;
           &:hover {
-          background-color: @green;
+          background-color: @blue;
           color: white;
           }
         }
@@ -55,17 +55,24 @@
       } 
       
       .tabs-item-title {
-        font-size: 2.4rem;
-        font-weight: bold;
+        color: gray;
+        font-size: 2.1rem;
         padding-bottom: 10px;
+      }
+
+      .tabs-item-description {
+        color: gray;
+        font-size: 1.7rem;
+        line-height: 2rem;
       }
 
       .regBtn {
         border: none;
         color: white;
-        background-color: @green;
+        background-color: @blue;
         margin-top: 15px;
         padding: 5px 10px;
+        justify-self: center;
       }
     }
     
@@ -75,6 +82,7 @@
   } 
   
   .selection-img {
+    border: 1px solid @blue;
     margin: 5px 0;
     max-height: 300px;
     max-width: 300px;

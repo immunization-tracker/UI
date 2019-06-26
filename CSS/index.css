@@ -190,6 +190,12 @@ header .dropdown {
   flex-direction: row;
   width: 30%;
 }
+@media (max-width:800px) {
+  header .dropdown {
+    width: 100%;
+    border: 1px solid black;
+  }
+}
 header .dropdown .dropdown-button {
   padding: 0 20px 0 10px;
   cursor: pointer;
@@ -301,11 +307,11 @@ footer {
 }
 .section .tabs .tabs-links .tabs-link-selected {
   z-index: 2;
-  color: lightseagreen;
-  border-bottom: 1px solid lightseagreen;
+  color: #2070b2;
+  border-bottom: 1px solid #2070b2;
 }
 .section .tabs .tabs-links .tabs-link-selected:hover {
-  background-color: lightseagreen;
+  background-color: #2070b2;
   color: white;
 }
 .section .tabs-items {
@@ -332,21 +338,28 @@ footer {
   }
 }
 .section .tabs-items .tabs-item .tabs-item-title {
-  font-size: 2.4rem;
-  font-weight: bold;
+  color: gray;
+  font-size: 2.1rem;
   padding-bottom: 10px;
+}
+.section .tabs-items .tabs-item .tabs-item-description {
+  color: gray;
+  font-size: 1.7rem;
+  line-height: 2rem;
 }
 .section .tabs-items .tabs-item .regBtn {
   border: none;
   color: white;
-  background-color: lightseagreen;
+  background-color: #2070b2;
   margin-top: 15px;
   padding: 5px 10px;
+  justify-self: center;
 }
 .section .tabs-items .tabs-item-selected {
   display: block;
 }
 .section .selection-img {
+  border: 1px solid #2070b2;
   margin: 5px 0;
   max-height: 300px;
   max-width: 300px;
