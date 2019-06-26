@@ -158,14 +158,7 @@ header {
   top: 0;
   margin-left: -1px;
   align-items: baseline;
-<<<<<<< HEAD
   z-index: 100;
-}
-@media (max-width:800px) {
-  header {
-    background-color: red;
-=======
-  z-index: 2;
   background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
@@ -173,7 +166,6 @@ header {
   header {
     flex-direction: column;
     padding-bottom: 0;
->>>>>>> 1b6ab4355a768199dd007b27e6fa8e6e9bef1794
   }
 }
 header .logo {
@@ -226,23 +218,9 @@ header nav .dropdown {
   width: 100%;
 }
 @media (max-width:800px) {
-<<<<<<< HEAD
-  header .dropdown {
-    width: 100%;
-    border: 1px solid black;
-  }
-}
-header .dropdown .dropdown-button {
-  padding: 0 20px 0 10px;
-  cursor: pointer;
-}
-header .dropdown .dropdown-button:hover {
-  background-color: black;
-=======
   header nav .dropdown .dropdown-button {
     display: none;
   }
->>>>>>> 1b6ab4355a768199dd007b27e6fa8e6e9bef1794
 }
 header nav .dropdown .dropdown-button a {
   text-decoration: none;
@@ -254,14 +232,7 @@ header nav .dropdown .dropdown-button a:hover {
   color: black;
   text-decoration: underline;
 }
-<<<<<<< HEAD
-header .dropdown .dropdown-hidden {
-  display: none;
-}
-header .dropdown .dropdown-links {
-=======
 header nav .dropdown .dropdown-links {
->>>>>>> 1b6ab4355a768199dd007b27e6fa8e6e9bef1794
   width: 100%;
   flex-direction: column;
   flex-direction: row;
@@ -289,8 +260,6 @@ header nav .dropdown .dropdown-links a:hover {
   text-decoration: underline;
   color: black;
 }
-<<<<<<< HEAD
-=======
 header nav .dropdown .dropdown-hidden {
   display: none;
 }
@@ -299,7 +268,6 @@ header nav .dropdown .dropdown-hidden {
     display: flex;
   }
 }
->>>>>>> 1b6ab4355a768199dd007b27e6fa8e6e9bef1794
 .cta {
   display: flex;
   flex-direction: column;
