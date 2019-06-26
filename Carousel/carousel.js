@@ -2,9 +2,9 @@ class Carousel {
     constructor(caro){
         this.caro = caro
         this.firstImg = caro.querySelector('img')
+        this.h1=caro.querySelector('.cta h1')
 
         this.firstImg.classList.add('img-reveal')
-
         // startTime = Date.now()
         // if (counter >= 10000) {
 

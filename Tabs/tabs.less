@@ -68,21 +68,27 @@
         color: gray;
         font-size: 1.7rem;
         line-height: 2rem;
+        @media @phone {
+          display:table-cell;
+          text-align:center;
+          vertical-align:middle;
+        }
       }
 
-      .regBtn {
-        border: none;
-        color: white;
-        background-color: @green;
-        margin-top: 15px;
-        padding: 5px 10px;
-        justify-self: center;
-        @media @phone {
-          align-self: center;
-        } 
-      }
+      .regBtn-wrapper {
+      
+        .regBtn {
+          border: none;
+          color: white;
+          background-color: @green;
+          margin-top: 15px;
+          padding: 5px 10px;
+          justify-self: center;
+        }
+      } 
     }
-    
+
+      
     .tabs-item-selected {
       display: block;
     }
