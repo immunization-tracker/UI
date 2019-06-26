@@ -11,8 +11,8 @@ header{
     align-items:baseline;
     z-index: 100;
 
-    @media @phone {
-        flex-direction: column;
+    @media @tablet {
+        background-color: red;
     }
 
     .logo {
@@ -42,9 +42,13 @@ header{
         display: flex;
         flex-direction: row;
         width: 30%;
-        
+        @media @tablet{
+            width: 100%;
+            border: 1px solid black;
+        }
         .dropdown-button{
             padding: 0 20px 0 10px;
+            cursor:pointer;
             &:hover{
                 background-color: black;
             }

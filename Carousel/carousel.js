@@ -6,7 +6,7 @@ class Carousel {
         this.firstImg.classList.add('img-reveal')
 
         if (counter >= 10000) {
-
+            images.forEach(img => img.classList.remove('img-reveal'))
         }
         else if (counter < 10000) {
             clearInterval(countUp)
