@@ -1,0 +1,40 @@
+<svg id="Cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2000" height="1200" viewBox="0 0 2000 1200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4986e9;
+      }
+
+      .cls-2 {
+        fill: #010101;
+        opacity: 0.25;
+      }
+
+      .cls-3 {
+        fill: #03ff2d;
+      }
+    </style>
+    <image id="image" width="44" height="172" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAACsBAMAAADyGlPqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAAAAAAAgICC0tLTw8PD+/v5bW1vy8vL///+3t7cUlLg7AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAADWSURBVEjH7dctDgIxEIbh9gYdBMlKgsAjyF6AZA/AJliCQaPw/HUlbo8LdNrOlLYkaOYzu3nSjH+VwmlwMyoZxHHVxKao3CFZWYPrTzbfGKB0RedsiOfrvt8sifFverKv3XfhCj6ejNZtmPnnyAvrd0x4DDx4xss2Dq+r9Ea4gtwSnxl3xBfGW+KrsLCwsLCwsLCwsPC/cEfMA6El5jlxIL4xbogfyNp9xqAhbJArGZRFk0+shl8Gqrf9O8hWEFlDNlOPvR+LsZKdtUitJa0qPq7mchbXT+SnDV9YleqUAAAAAElFTkSuQmCC"/>
+  </defs>
+  <rect id="Base_Cloud" data-name="Base Cloud" class="cls-1" x="308" y="993" width="1417" height="130"/>
+  <circle id="Left_puff" data-name="Left puff" class="cls-1" cx="308" cy="831" r="290"/>
+  <circle id="Right_Puff" data-name="Right Puff" class="cls-1" cx="1692" cy="834" r="290"/>
+  <circle id="Middle_Puff" data-name="Middle Puff" class="cls-1" cx="792" cy="709" r="410"/>
+  <circle id="Big_Puff" data-name="Big Puff" class="cls-1" cx="1218" cy="611" r="508"/>
+  <rect id="Line_2_2" data-name="Line 2, 2" class="cls-2" x="902" y="274" width="525" height="49"/>
+  <rect id="Line_3_1" data-name="Line 3, 1" class="cls-2" x="573" y="481" width="45" height="49"/>
+  <rect id="Line_3_2" data-name="Line 3, 2" class="cls-2" x="666" y="481" width="565" height="49"/>
+  <rect id="Line_3_3" data-name="Line 3, 3" class="cls-2" x="1281" y="481" width="146" height="49"/>
+  <rect id="Line_4_1" data-name="Line 4, 1" class="cls-2" x="573" y="666" width="242" height="49"/>
+  <rect id="Line_4_2" data-name="Line 4, 2" class="cls-2" x="862" y="666" width="565" height="49"/>
+  <rect id="Line_5_1" data-name="Line 5, 1" class="cls-2" x="573" y="851" width="565" height="49"/>
+  <rect id="Line_5_2" data-name="Line 5, 2" class="cls-2" x="1185" y="851" width="242" height="49"/>
+  <rect id="Line_6_1" data-name="Line 6, 1" class="cls-2" x="573" y="1041" width="93" height="49"/>
+  <rect id="Line_6_2" data-name="Line 6, 2" class="cls-2" x="728" y="1041" width="565" height="49"/>
+  <rect id="Line_6_3" data-name="Line 6, 3" class="cls-2" x="1354" y="1041" width="73" height="49"/>
+  <use id="Neck" x="987" y="83" xlink:href="#image"/>
+  <image id="Top" x="835" y="83" width="348" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAAAsBAMAAADbbR1qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAAAAAAAgICC0tLTw8PD+/v5bW1vy8vL///+3t7cUlLg7AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAADxSURBVFjD7dm9DcIwEIZh3waGgh5RpKdiAaQMABItK1ClJwiyQcalOFvYTc4F8PmT/FYpH50sxT/OabKqOu+y0By7VCtojJ2n0qZetKQsLm30CppRmmfkohXlUQ1Xxxu4u+O52k77D1e/NsOr4p7XuBp0uOsZLVpu2obxKrdDe6xuGXdGc6ymwNWVi9bY6ep1HGshrgblHtAYu3vC7dEYuzHhXtAYu0fjNm7j/pvbozF2I+9vguwnzLPFIdtAUm7PaQ4/ZEdLtoO7/PAe48t5vksnnvFS3kDSrAau63PWpxQGb/YQiMbY5c+WguYsF2f7BrNrwDkkS/7CAAAAAElFTkSuQmCC"/>
+  <use id="Out" x="987" y="631" xlink:href="#image"/>
+  <image id="Body" x="888" y="239" width="244" height="486" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAAHmBAMAAAC2aL7pAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAAAAAAABbW1u0tLTw8PD+/v7///8gICC3t7fy8vLSSYM+AAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAH1SURBVHja7dExTutQFARQZwe2hUTtBoke0SOk7AAWAMFKS8kGsgAatovCe04e6dD/GjdnCktufDxzu27JEEp3mU1KHoZ+NfnCjsq/7azc3jstn+1Nnu5XK73UXqH0UntFur6Md0+BPE7N4rX0uJ0j2U3n2oW+PmTked6/n+jyE7cpeZ4/T4uXuXPyPE+VLnt/JOmvunihD0l639LRvevifTn1VZZ+KMf+ed5k6ZeGvs/Srw29zdK7hn7O0m9oNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wj0/6O3WXrX0PdZ+rWhb7L0S0NfZemHQm+OzzFLT0ezL/RwSMr7oaU/kvRXpcuxo4tP5dSVHm5z8uew0GXx60NK3r8ve1d6GLcZeVfm/qHr4sN49xTIY5WPe59qZ9OvTXf//qG/p8hr1K6l16jddWvZZzk9ed+tZf+So/aFHLz3CfwGvCjDm/p/o6wAAAAASUVORK5CYII="/>
+  <rect id="Vaccine" class="cls-3" x="904" y="482" width="213" height="228" rx="25" ry="25"/>
+</svg>
