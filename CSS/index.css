@@ -162,7 +162,7 @@ header {
   background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header {
     flex-direction: column;
     padding-bottom: 0;
@@ -187,7 +187,7 @@ header .logo {
   width: 10%;
   height: 7rem;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header .logo {
     width: 100%;
     margin-top: 0;
@@ -204,7 +204,7 @@ header nav {
   justify-content: flex-start;
   display: flex;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav {
     flex-direction: column;
     align-items: center;
@@ -222,7 +222,7 @@ header nav a:hover {
   color: black;
   text-decoration: underline;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav a {
     margin: 0;
     width: 90%;
@@ -237,7 +237,7 @@ header nav .dropdown {
   flex-direction: row;
   width: 100%;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-button {
     display: none;
   }
@@ -260,7 +260,7 @@ header nav .dropdown .dropdown-links {
   padding-left: 10px;
   justify-content: flex-start;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-links {
     width: 90%;
     margin: 0 auto;
@@ -272,7 +272,7 @@ header nav .dropdown .dropdown-links a {
   color: black;
   cursor: pointer;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-links a {
     color: black;
   }
@@ -284,7 +284,7 @@ header nav .dropdown .dropdown-links a:hover {
 header nav .dropdown .dropdown-hidden {
   display: none;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header nav .dropdown .dropdown-hidden {
     display: flex;
   }
@@ -294,7 +294,7 @@ header #google_translate_element {
   top: 0;
   left: 800px;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   header #google_translate_element {
     left: 560px;
     text-decoration: none;
@@ -311,7 +311,7 @@ header #google_translate_element {
   z-index: -1;
   display: none;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .cta .cta-img {
     margin-top: 125px;
   }
@@ -328,7 +328,7 @@ header #google_translate_element {
   border-bottom: solid black 1px;
   z-index: 2;
 }
-@media (max-width:800px) {
+@media (max-width: 800px) {
   .cta h1 {
     font-size: 3.5rem;
     -webkit-text-stroke-width: 1.2px;
@@ -424,12 +424,12 @@ footer p {
   margin: 25px 15px 25px 35%;
   transition: all 0.3s ease-in-out;
 }
-.section .tabs-items .tabs-item .tabs-item-title {
+.section .tabs-items .tabs-item .tabs-text .tabs-item-title {
   color: gray;
   font-size: 2.1rem;
   padding-bottom: 10px;
 }
-.section .tabs-items .tabs-item .tabs-item-description {
+.section .tabs-items .tabs-item .tabs-text .tabs-item-description {
   color: gray;
   font-size: 1.7rem;
   line-height: 2rem;
@@ -441,7 +441,7 @@ footer p {
   margin-top: 15px;
   padding: 5px 10px;
 }
-.section .tabs-items .tabs-item .tabs-item-selected {
+.section .tabs-items .tabs-item .selected {
   display: block;
 }
 .section .selection-img {
@@ -453,11 +453,6 @@ footer p {
   height: auto;
   width: auto;
   transition: all 0.5s ease-in-out;
-}
-@media (max-width: 500px) {
-  .section .selection-img {
-    margin: 10px auto;
-  }
 }
 .team {
   margin-top: 20px;
