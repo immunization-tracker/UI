@@ -158,7 +158,7 @@ header {
   top: 0;
   margin-left: -1px;
   align-items: baseline;
-  z-index: 100;
+  z-index: 2;
   background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
@@ -200,6 +200,7 @@ header nav a {
   cursor: pointer;
 }
 header nav a:hover {
+  color: black;
   text-decoration: underline;
 }
 @media (max-width:800px) {
@@ -236,6 +237,7 @@ header nav .dropdown .dropdown-links {
   width: 100%;
   flex-direction: column;
   flex-direction: row;
+  display: flex;
   padding-left: 10px;
   justify-content: flex-start;
 }
@@ -268,6 +270,12 @@ header nav .dropdown .dropdown-hidden {
     display: flex;
   }
 }
+header #google_translate_element {
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 800px;
+}
 .cta {
   display: flex;
   flex-direction: column;
@@ -275,10 +283,7 @@ header nav .dropdown .dropdown-hidden {
   margin-bottom: 100;
 }
 .cta .cta-img {
-  max-width: 100%;
-  max-height: 600px;
-  width: auto;
-  height: auto;
+  width: 100%;
   opacity: 0.8;
   z-index: -1;
   display: none;
@@ -317,7 +322,7 @@ header nav .dropdown .dropdown-hidden {
     opacity: 0;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 .main-content {
@@ -340,8 +345,12 @@ header nav .dropdown .dropdown-hidden {
   flex-direction: column;
 }
 footer {
+  color: gray;
   padding: 20px 0 20px 0;
   text-align: center;
+}
+footer p {
+  font-size: 1rem;
 }
 .section .tabs {
   width: 100%;
@@ -366,11 +375,11 @@ footer {
 }
 .section .tabs .tabs-links .tabs-link-selected {
   z-index: 2;
-  color: #2070b2;
-  border-bottom: 1px solid #2070b2;
+  color: #20b2aa;
+  border-bottom: 1px solid #20b2aa;
 }
 .section .tabs .tabs-links .tabs-link-selected:hover {
-  background-color: #2070b2;
+  background-color: #20b2aa;
   color: white;
 }
 .section .tabs-items {
@@ -409,7 +418,7 @@ footer {
 .section .tabs-items .tabs-item .regBtn {
   border: none;
   color: white;
-  background-color: #2070b2;
+  background-color: #20b2aa;
   margin-top: 15px;
   padding: 5px 10px;
   justify-self: center;
@@ -418,12 +427,14 @@ footer {
   display: block;
 }
 .section .selection-img {
-  border: 1px solid #2070b2;
+  border: 1px solid #20b2aa;
   margin: 5px 0;
+  opacity: 0.9;
   max-height: 300px;
   max-width: 300px;
   height: auto;
   width: auto;
+  transition: all 0.5s ease-in-out;
 }
 .team {
   margin-top: 20px;

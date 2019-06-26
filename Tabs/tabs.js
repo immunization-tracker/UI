@@ -32,15 +32,15 @@ class TabLink {
       // Set the img src attribute to the corresponding tabLink
       switch(this.link.innerHTML) {
         case 'PARENT':
-          this.img.setAttribute('src', "../Images/hands.jpg")
+          this.img.setAttribute('src', "../Images/Tabs/hands.jpg")
           break;
 
         case 'PATIENT':
-          this.img.setAttribute('src', '../Images/stethoscope.jpg')
+          this.img.setAttribute('src', '../Images/Tabs/stethoscope.jpg')
           break;
 
         case 'PROVIDER':
-          this.img.setAttribute('src', '../Images/pediatric.jpg')
+          this.img.setAttribute('src', '../Images/Tabs/pediatric.jpg')
           break;
       }
       

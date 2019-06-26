@@ -2,39 +2,48 @@ class Carousel {
     constructor(caro){
         this.caro = caro
         this.firstImg = caro.querySelector('img')
+        this.images = caro.querySelectorAll('img')
+        console.log(this.images)
 
         this.firstImg.classList.add('img-reveal')
 
-        if (counter >= 10000) {
-            images.forEach(img => img.classList.remove('img-reveal'))
-        }
-        else if (counter < 10000) {
-            clearInterval(countUp)
-            startTime = Date.now()
-            countUp = setInterval(timer, 1) // Updates every 1ms
-        }
+        this.images.forEach(img => img.classList.addEventListener('click', showImg(1)))
+
+        // startTime = Date.now()
+        // if (counter >= 10000) {
+
+        //     if (index < 2) {
+        //         index++
+        //     } else {
+        //         index=0
+        //     }
+
+        //     images.forEach(img => img.classList.remove('img-reveal'))
+        //     images[index].classList.add('img-reveal')
+        //     startTime = Date.now()
+        //     countUp = setInterval(timer, 1)
     }
 
-    // showImg(param) {
-    //     const images = document.querySelectorAll('.carousel img')
-    //     const curIndex = index
+    showImg(param) {
+        const images = document.querySelectorAll('.carousel img')
+        const curIndex = index
 
-    //     if ((index+param>=0) && (index+param<=2)) {
-    //         index += param
-    //     } else if (index+param>2) {
-    //         index = 0
-    //     } else if (index+param<0) {
-    //         index = 2
-    //     }
+        if ((index+param>=0) && (index+param<=2)) {
+            index += param
+        } else if (index+param>2) {
+            index = 0
+        } else if (index+param<0) {
+            index = 2
+        }
 
-    //     images.forEach(img => img.classList.remove('img-reveal'))
+        images.forEach(img => img.classList.remove('img-reveal'))
 
-    //     if (curIndex<index) {
-    //         images[index].classList.add('img-reveal')
-    //     } else {
-    //         images[index].classList.add('img-reveal')
-    //     }
-    // }
+        if (curIndex<index) {
+            images[index].classList.add('img-reveal')
+        } else {
+            images[index].classList.add('img-reveal')
+        }
+    }
 }
 
 let index=0
