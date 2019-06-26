@@ -158,7 +158,6 @@ header {
   top: 0;
   margin-left: -1px;
   align-items: baseline;
-  z-index: 2;
 }
 @media (max-width:500px) {
   header {
@@ -179,18 +178,20 @@ header nav {
 header nav a {
   justify-content: space-between;
   text-decoration: none;
-  color: grey;
+  color: black;
   padding: 0 25px;
   margin-left: 2rem;
 }
 header nav a:hover {
-  color: black;
   text-decoration: underline;
 }
 header .dropdown {
   display: flex;
   flex-direction: row;
   width: 30%;
+}
+header .dropdown .dropdown-button {
+  padding: 0 20px 0 10px;
 }
 header .dropdown .dropdown-button:hover {
   background-color: black;
@@ -203,11 +204,13 @@ header .dropdown .dropdown-button a {
 header .dropdown .dropdown-button a:hover {
   color: white;
 }
+header .dropdown .dropdown-hidden {
+  display: none;
+}
 header .dropdown .dropdown-links {
   width: 100%;
   flex-direction: column;
   flex-direction: row;
-  display: flex;
   padding-left: 10px;
   justify-content: space-evenly;
 }
@@ -217,9 +220,6 @@ header .dropdown .dropdown-links a {
 }
 header .dropdown .dropdown-links a:hover {
   text-decoration: underline;
-}
-header .dropdown .dropdown-hidden {
-  display: none;
 }
 .cta {
   display: flex;
