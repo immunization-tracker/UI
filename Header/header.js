@@ -13,6 +13,5 @@ class Show{
     }
 }
 
-
 let loginButton = document.querySelectorAll('.dropdown').forEach(event => new Show(event));
 

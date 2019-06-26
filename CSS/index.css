@@ -150,13 +150,14 @@ a {
   max-width: 100vw;
 }
 header {
+  border: solid  1px;
+  border-color: black;
   width: 100%;
   justify-content: space-between;
   background-color: white;
   display: flex;
   position: fixed;
   top: 0;
-  margin-left: -1px;
   align-items: baseline;
   z-index: 100;
   background: linear-gradient(lightseagreen, #f79d00);
@@ -171,14 +172,14 @@ header {
 @media (max-width: 500px) {
   header {
     width: 100%;
-    border: 1px solid black;
+    background: lightseagreen;
   }
 }
 header .button-mobile {
   border: solid  1px;
   border-color: black;
   margin-top: 0;
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-between;
 }
@@ -188,18 +189,18 @@ header .button-mobile {
   }
 }
 header .button-mobile p {
-  border: solid  1px;
-  border-color: black;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  margin: 0 auto;
   width: 90%;
   padding-top: 5px;
   flex-direction: column;
-  color: white;
+  color: black;
   text-align: center;
-  margin-left: 20px;
 }
-header .button-mobile .em {
-  font-size: 20px;
-  justify-content: flex-end;
+header .button-mobile p:hover {
+  text-decoration: underline;
 }
 header .logo {
   margin-top: 15px;
@@ -218,25 +219,31 @@ header .logo {
     display: none;
   }
 }
-header nav {
+header .show-menu {
+  border: solid  1px;
+  border-color: black;
   width: 100%;
   align-items: flex-end;
   justify-content: flex-start;
   display: flex;
 }
 @media (max-width:800px) {
-  header nav {
+  header .show-menu {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
-  header nav {
+  header .show-menu {
     width: 100%;
-    border-top: 1px solid black;
+    position: absolute;
+    margin-top: 15px;
+    background: linear-gradient(lightseagreen, #f79d00);
+    display: none;
   }
 }
-header nav a {
+header .show-menu a {
   justify-content: space-between;
   text-decoration: none;
   color: black;
@@ -244,12 +251,14 @@ header nav a {
   margin-left: 2rem;
   cursor: pointer;
 }
-header nav a:hover {
+header .show-menu a:hover {
   color: black;
   text-decoration: underline;
 }
 @media (max-width:800px) {
-  header nav a {
+  header .show-menu a {
+    border: solid  1px;
+    border-color: black;
     margin: 0;
     width: 90%;
     padding: 10px 0 10px 0;
@@ -258,27 +267,27 @@ header nav a:hover {
     border-bottom: 1px solid black;
   }
 }
-header nav .dropdown {
+header .show-menu .dropdown {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 @media (max-width:800px) {
-  header nav .dropdown .dropdown-button {
+  header .show-menu .dropdown .dropdown-button {
     display: none;
   }
 }
-header nav .dropdown .dropdown-button a {
+header .show-menu .dropdown .dropdown-button a {
   text-decoration: none;
   color: black;
   font-size: 2rem;
   cursor: pointer;
 }
-header nav .dropdown .dropdown-button a:hover {
+header .show-menu .dropdown .dropdown-button a:hover {
   color: black;
   text-decoration: underline;
 }
-header nav .dropdown .dropdown-links {
+header .show-menu .dropdown .dropdown-links {
   width: 100%;
   flex-direction: column;
   flex-direction: row;
@@ -287,38 +296,43 @@ header nav .dropdown .dropdown-links {
   justify-content: flex-start;
 }
 @media (max-width:800px) {
-  header nav .dropdown .dropdown-links {
+  header .show-menu .dropdown .dropdown-links {
     width: 90%;
     margin: 0 auto;
     padding-left: 0;
   }
 }
-header nav .dropdown .dropdown-links a {
+header .show-menu .dropdown .dropdown-links a {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 @media (max-width:800px) {
-  header nav .dropdown .dropdown-links a {
+  header .show-menu .dropdown .dropdown-links a {
     color: black;
   }
 }
 @media (max-width: 500px) {
-  header nav .dropdown .dropdown-links a {
+  header .show-menu .dropdown .dropdown-links a {
     border: none;
     text-decoration: underline;
   }
 }
-header nav .dropdown .dropdown-links a:hover {
+header .show-menu .dropdown .dropdown-links a:hover {
   text-decoration: underline;
   color: black;
 }
-header nav .dropdown .dropdown-hidden {
+header .show-menu .dropdown .dropdown-hidden {
   display: none;
 }
 @media (max-width:800px) {
-  header nav .dropdown .dropdown-hidden {
+  header .show-menu .dropdown .dropdown-hidden {
     display: flex;
+  }
+}
+@media (max-width: 500px) {
+  header .hidden-menu {
+    display: none;
   }
 }
 header #google_translate_element {
@@ -484,45 +498,4 @@ footer p {
   .section .selection-img {
     margin: 10px auto;
   }
-}
-.team {
-  margin-top: 20px;
-  background: white;
-  border: 2px solid #f79d00;
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  margin-top: 150px;
-  text-align: center;
-}
-.team-members {
-  width: 100%;
-  border: solid  1px;
-  border-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.team-members .person {
-  margin-left: 20px;
-  position: relative;
-}
-.team-members .person img {
-  width: 300px;
-}
-.team-members .person img:hover {
-  filter: brightness(50%);
-}
-.team-members .person .team-design {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-}
-.team-members .person .team-design h4 {
-  font-size: 2rem;
-  color: white;
-}
-.team-members .person .hidden-text {
-  display: none;
 }

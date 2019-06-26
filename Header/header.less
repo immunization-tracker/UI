@@ -1,13 +1,14 @@
 header{
+    .box(black);
     width:100%;
     // .flex();
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: white;
     display:flex;
     // opacity: 0.8;
     position: fixed;
     top:0;
-    margin-left: -1px;
+    //margin-left: -1px;
     align-items:baseline;
     z-index: 100;
     background:linear-gradient(lightseagreen,#f79d00);
@@ -18,31 +19,36 @@ header{
     }
     @media @phone{
         width: 100%;
-        border:1px solid black;
+        background:lightseagreen;
     }
     .button-mobile{
         .box(black);
         margin-top: 0;
-        display:flex;
+        display:none;
         width:100%;
         justify-content: space-between;
         @media @phone{
             display:flex;
+           
         }
         p{  
-            .box(black);
+            cursor: pointer;
+            padding-top:10px;
+            padding-bottom:7px;
+            margin: 0 auto;
             width:90%;
             padding-top: 5px;
             flex-direction: column;
-            color:white;
+            color:black;
             text-align: center;
-            margin-left: 20px;
-
+            &:hover{
+                text-decoration: underline;
+            }
          }
-        .em{
-            font-size: 20px;
-           justify-content: flex-end;
-        }
+        // .em{
+        //     font-size: 20px;
+        //    justify-content: flex-end;
+        // }
     }
     
     .logo {
@@ -59,7 +65,8 @@ header{
         }
     }
     
-    nav{
+    .show-menu{
+        .box(black);
         width:100%;
         align-items: flex-end;
         justify-content: flex-start;
@@ -68,12 +75,20 @@ header{
         @media @tablet{
             flex-direction: column;
             align-items: center;
+            width:100%;
+            
         }
         @media @phone{
             width: 100%;
-            border-top: 1px solid black;
+            position: absolute;
+            margin-top: 15px;
+            //margin-top: -300px;
+            background:linear-gradient(lightseagreen,#f79d00);
+            display: none;
+            
         }
         a{  
+            
             justify-content: space-between;
             text-decoration: none;
             color: black;
@@ -85,13 +100,18 @@ header{
                 text-decoration: underline;
             }
             @media @tablet{
+                .box(black);
+                
                 margin:0;
                 width:90%;
                 padding: 10px 0 10px 0;
                 text-align: center;
                 color:black;
                 border-bottom: 1px solid black;
-        }
+            }
+            @media @phone{
+                
+            }
     }
     .dropdown{
         display: flex;
@@ -151,6 +171,11 @@ header{
                 }
             
             }
+    }
+}
+.hidden-menu{
+    @media @phone{
+        display: none;
     }
 }
 #google_translate_element{
