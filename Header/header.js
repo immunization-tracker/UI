@@ -7,15 +7,9 @@ class Show{
         this.button.addEventListener('click', ()=> {
             this.showLinks();
         })
-        this.header.addEventListener('mouseleave', () => {
-            this.showLinks();
-        })
     }
     showLinks(){
-        this.links.classList.toggle('dropdown-hidden')
-    }
-    hideLinks(){
-        this.links.style.display = 'none';
+        this.links.classList.toggle('dropdown-hidden');
     }
 }
 
