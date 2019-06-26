@@ -2,12 +2,8 @@ class Carousel {
     constructor(caro){
         this.caro = caro
         this.firstImg = caro.querySelector('img')
-        this.images = caro.querySelectorAll('img')
-        console.log(this.images)
 
         this.firstImg.classList.add('img-reveal')
-
-        this.images.forEach(img => img.classList.addEventListener('click', showImg(1)))
 
         // startTime = Date.now()
         // if (counter >= 10000) {

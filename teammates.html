@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="./Translate/translate.js" async></script> 
     <script src="./Tabs/Tabs.js" async></script>
     <script src="./Header/header.js" async></script>
     <script src="./Team/teammates.js" async></script>
@@ -16,23 +19,26 @@
 </head>
 
 <header>
-        <img class='logo' src="../Images/cadusis.svg"></img>
-        <nav>
-            <a href="index.html" >HOME</a>
-            <a href="teammates.html" >TEAM</a>
-            <a href="#">CONTACT</a>
-            <div class='dropdown'>
-                <div class="dropdown-button"><a href='#'>Login</a> </div>  
-                    <div class="dropdown-links dropdown-hidden">
-                        <a href="#">Provider</a>
-                        <a href="#">Patient</a>
-                    </div>
+    <img class='logo' src="../Images/Logo/caduceus-red.svg"></img>
+   
+    <nav>
+        <a href="index.html" >HOME</a>
+        <a href="teammates.html" >TEAM</a>
+        <a href="#">CONTACT</a>
+        <a href="help-page.html">HELP</a>
+        <div class='dropdown'>
+            <div class="dropdown-button"><a href='#'>Login</a> </div>  
+                <div class="dropdown-links dropdown-hidden">
+                    <a href="#">Provider</a>
+                    <a href="#">Patient</a>
                 </div>
             </div>
-        </nav>
-    
-       
-    </header>
+        </div>
+    </nav>
+
+    <!-- Allow the website to be translated into other languages via Google-->
+    <div id="google_translate_element"></div>
+</header>
 
 <body class='container team'>
 
