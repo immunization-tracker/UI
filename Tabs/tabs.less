@@ -40,59 +40,56 @@
     height: auto;
     display: flex;
     overflow: scroll;
-    @media @phone {
-      flex-direction: column-reverse;
-    }  
+    // @media @phone {
+    //   flex-direction: column-reverse;
+    // }  
 
-    .tabs-item {
-      display: none;  
-      height: auto;
-      width: 25%;
-      margin: 25px 15px 25px 35%;
-      transition: all .3s ease-in-out;
-      @media @phone {
-        width: 75%;
-        margin: 10px auto;
-      } 
+      .tabs-item {
+        display: none;  
+        height: auto;
+        width: 25%;
+        margin: 25px 15px 25px 35%;
+        transition: all .3s ease-in-out;
+        // @media @phone {
+        //   width: 75%;
+        //   margin: 10px auto;
+        // } 
       
       .tabs-item-title {
         color: gray;
         font-size: 2.1rem;
         padding-bottom: 10px;
-        @media @phone {
-          text-align: center;
-        } 
+        // @media @phone {
+        //   text-align: center;
+        // } 
       }
 
       .tabs-item-description {
         color: gray;
         font-size: 1.7rem;
         line-height: 2rem;
-        @media @phone {
-          display:table-cell;
-          text-align:center;
-          vertical-align:middle;
-        }
+        // @media @phone {
+        //   display:table-cell;
+        //   text-align:center;
+        //   vertical-align:middle;
+        // }
       }
 
-      .regBtn-wrapper {
-        @m
-        .regBtn {
-          border: none;
-          color: white;
-          background-color: @green;
-          margin-top: 15px;
-          padding: 5px 10px;
-          justify-self: center;
-        }
-
+      .regBtn {
+        border: none;
+        color: white;
+        background-color: @green;
+        margin-top: 15px;
+        padding: 5px 10px;
+        // @media @phone {
+        //   justify-self: center;
+        // }
       } 
-    }
-
       
-    .tabs-item-selected {
-      display: block;
-    }
+      .tabs-item-selected {
+        display: block;
+      }
+    }  
   } 
   
   .selection-img {
