@@ -168,18 +168,38 @@ header {
     padding-bottom: 0;
   }
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    border: 1px solid black;
+  }
+}
 header .button-mobile {
-  margin-left: 10px;
-  display: none;
-  margin-top: 10px;
-  width: 50px;
+  border: solid  1px;
+  border-color: black;
+  margin-top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 @media (max-width: 500px) {
   header .button-mobile {
     display: flex;
-    border: solid  1px;
-    border-color: black;
   }
+}
+header .button-mobile p {
+  border: solid  1px;
+  border-color: black;
+  width: 90%;
+  padding-top: 5px;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+}
+header .button-mobile .em {
+  font-size: 20px;
+  justify-content: flex-end;
 }
 header .logo {
   margin-top: 15px;
@@ -190,6 +210,7 @@ header .logo {
   header .logo {
     width: 100%;
     margin-top: 0;
+    height: 4rem;
   }
 }
 @media (max-width: 500px) {
@@ -207,6 +228,12 @@ header nav {
   header nav {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    border-top: 1px solid black;
   }
 }
 header nav a {
@@ -276,6 +303,12 @@ header nav .dropdown .dropdown-links a {
     color: black;
   }
 }
+@media (max-width: 500px) {
+  header nav .dropdown .dropdown-links a {
+    border: none;
+    text-decoration: underline;
+  }
+}
 header nav .dropdown .dropdown-links a:hover {
   text-decoration: underline;
   color: black;
@@ -291,12 +324,11 @@ header nav .dropdown .dropdown-hidden {
 header #google_translate_element {
   position: absolute;
   top: 0;
-  left: 800px;
+  left: 900px;
 }
 @media (max-width:800px) {
   header #google_translate_element {
-    left: 560px;
-    text-decoration: none;
+    display: none;
   }
 }
 .cta {
@@ -411,11 +443,6 @@ footer p {
   display: flex;
   overflow: scroll;
 }
-@media (max-width: 500px) {
-  .section .tabs-items {
-    flex-direction: column-reverse;
-  }
-}
 .section .tabs-items .tabs-item {
   display: none;
   height: auto;
@@ -423,43 +450,24 @@ footer p {
   margin: 25px 15px 25px 35%;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item {
-    width: 75%;
-    margin: 10px auto;
-  }
-}
 .section .tabs-items .tabs-item .tabs-item-title {
   color: gray;
   font-size: 2.1rem;
   padding-bottom: 10px;
-}
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-title {
-    text-align: center;
-  }
 }
 .section .tabs-items .tabs-item .tabs-item-description {
   color: gray;
   font-size: 1.7rem;
   line-height: 2rem;
 }
-@media (max-width: 500px) {
-  .section .tabs-items .tabs-item .tabs-item-description {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-  }
-}
-@m .regBtn {
+.section .tabs-items .tabs-item .regBtn {
   border: none;
   color: white;
   background-color: #20b2aa;
   margin-top: 15px;
   padding: 5px 10px;
-  justify-self: center;
 }
-.section .tabs-items .tabs-item-selected {
+.section .tabs-items .tabs-item .tabs-item-selected {
   display: block;
 }
 .section .selection-img {
