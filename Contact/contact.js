@@ -12,6 +12,8 @@ const btnAts = {
 class Button {
     constructor(button) {
         this.button = button
+        button.style.width = btnAts['width']
+        button.style.fontSize = 
 
     }
 }
