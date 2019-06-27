@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./Translate/translate.js" async></script> 
     <script src="./Carousel/carousel.js" async></script>
@@ -16,29 +16,35 @@
 </head>
 
 <header>
-    <div class="button-mobile">
-        <i class="em em-anchor"></i>
-    </div> 
-    <img class='logo' src="../Images/Logo/caduceus-red.svg"></img>
-    <nav>
-            
-    <nav>
-        <a href="index.html" >HOME</a>
-        <a href="teammates.html" >TEAM</a>
-        <a href="#">CONTACT</a>
-        <a href="help.html">HELP</a>
-        <div class='dropdown'>
-            <div class="dropdown-button"><a href='#'>Login</a> </div>  
+    <div class="header-left">
+        <div class="button-mobile">
+        </div> 
+        <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
+    </div>   
+    
+    <div class="header-right">
+        <nav>
+            <a href="index.html" >HOME</a>
+            <i class="inav"></i>
+            <a href="teammates.html" >TEAM</a>
+            <i class="inav"></i>
+            <a href="#">CONTACT</a>
+            <i class="inav"></i>
+            <a href="help.html">HELP</a>
+            <i class="inav"></i>
+            <div class='dropdown'>
+                <div class="dropdown-button">
+                    <a href='#'>LOGIN</a> 
+                </div>  
                 <div class="dropdown-links dropdown-hidden">
-                    <a href="#">Provider</a>
-                    <a href="#">Patient</a>
+                    <a href="#">PROVIDER</a>
+                    <a href="#">PATIENT</a>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Allow the website to be translated into other languages via Google-->
-    <div id="google_translate_element"></div>
+            </div>     
+        </nav>
+        <!-- Allow the website to be translated into other languages via Google-->
+        <div id="google_translate_element"></div>
+    </div>
 </header>
 
 <body class='container'>
