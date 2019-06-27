@@ -7,53 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./Translate/translate.js" async></script> 
     <script src="./Carousel/carousel.js" async></script>
     <script src="./Tabs/tabs.js" async></script>
     <script src="./Header/header.js" async></script>
     <script src="./Header/header-mobile.js" async></script>
-    
 </head>
 
 <header>
-    <div class="button-mobile">
-        <p>MENU</p>
-    </div> 
-    <img class='logo' src="../Images/Logo/caduceus-red.svg"></img>
-    <nav>
-            
-    <nav>
-        <a href="index.html" >HOME</a>
-        <a href="teammates.html" >TEAM</a>
-        <a href="#">CONTACT</a>
-        <a href="help-page.html">HELP</a>
-        <div class='dropdown'>
-            <div class="dropdown-button"><a href='#'>Login</a> </div>  
+    <div class="header-left">
+        <img class='button-mobile' src='../Images/ham-menu.svg'>
+        <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
+    </div>   
+    
+    <div class="header-right">
+        <nav>
+            <a class='page-links' href="index.html" >HOME</a> 
+            <i class="inav"></i>
+            <a class='page-links' href="teammates.html" >TEAM</a>
+            <i class="inav"></i>
+            <a href="contact.html">CONTACT</a>
+            <a class='page-links' href="#">CONTACT</a>
+            <i class="inav"></i>
+            <a class='page-links' href="help.html">HELP</a>
+            <i class="inav"></i>
+            <div class='dropdown'>
+                <div class="dropdown-button">
+                    <a href='#'>LOGIN</a> 
+                </div>  
                 <div class="dropdown-links dropdown-hidden">
-                    <a href="#">Provider</a>
-                    <a href="#">Patient</a>
+                    <a class='login-links' href="#">PROVIDER</a>
+                    <a class='login-links' href="#">PATIENT</a>
                 </div>
-            </div>
-        
-    </nav>
-
-   
-
-    <!-- Allow the website to be translated into other languages via Google-->
-    <div id="google_translate_element"></div>
+            </div>     
+        </nav>
+        <!-- Allow the website to be translated into other languages via Google-->
+        <div id="google_translate_element"></div>
+    </div>
 </header>
 
 <body class='container'>
     <div class='cta'>
+        <!-- <h1>Immunization Tracker</h1> -->
+        
         <div class='carousel'>
-            <img class='cta-img' src="../Images/CTA/fam.jpg" alt="#">
+            <img class='cta-img img-reveal' src="../Images/CTA/fam.jpg" alt="#">
             <img class='cta-img' src="../Images/CTA/familytickle.jpg" alt="#">
             <img class='cta-img' src="../Images/CTA/grandparentschildren.jpg" alt="#">
         </div>
 
-        <h1>Immunization History In Your Pocket</h1>
+        <h2>Immunization History In Your Pocket</h2>
     </div>
 
     <div class="main-content">
@@ -61,42 +66,56 @@
             <h2>- YOU ARE A -</h2>
         </div>
         
+        <!-- Tabs Section -->
         <div class="section">
             <div class="tabs">
+                <!-- Tab Links -->
                 <div class="tabs-links">
                     <div class="tabs-link tabs-link-selected" data-tab="1">PARENT</div>
                     <div class="tabs-link" data-tab="2">PATIENT</div>
                     <div class="tabs-link" data-tab="3">PROVIDER</div>
                 </div>
             </div>
-
+            <!-- Tab Items -->
             <div class="tabs-items">
-                <div class="tabs-item tabs-item-selected" data-tab="1">
+                
+                <!-- tab 1 -->
+                <div class="tabs-item tabs-item-selected" id="parent" data-tab="1">
                     <div class='tabs-text'>
                         <p class="tabs-item-title">AS A PARENT</p>
                         <p class="tabs-item-description">You will be able to view all of your children's immunization records all on one page. Keep track of any and all missing vaccinations that your child may need in the future! Grant access to your child's physician to update the history and be able to see the details in an uploaded document.</p>
                     </div>
-                    <button class="regBtn parent">REGISTER TODAY!</button>
+                    <div class="btn-wrap">
+                        <button class="regBtn parent">REGISTER TODAY!</button>
+                    </div>
                 </div>
-
-                <div class="tabs-item" data-tab="2">
+                
+                <!-- tab 2 -->
+                <div class="tabs-item" id="patient" data-tab="2">
                     <div class='tabs-text'>
                         <p class="tabs-item-title">AS A PATIENT</p>
                         <p class="tabs-item-description">You will be able to view your immunization history all on one page. Give your doctor the permission to upload new records into your account when you get a new vaccine. Going on vacation? Check out a list of recommended vaccinations you will want before you go overseas!</p>
                     </div>
-                    <button class="regBtn pt">REGISTER TODAY!</button>
+                    <div class="btn-wrap">
+                        <button class="regBtn pt">REGISTER TODAY!</button>
+                    </div>   
                 </div>
-
-                <div class="tabs-item" data-tab="3">
+                
+                <!-- tab 3 -->
+                <div class="tabs-item" id="provider" data-tab="3">
                     <div class='tabs-text'>
                         <p class="tabs-item-title">AS A PROVIDER</p>
                         <p class="tabs-item-description">You will have the ability to view the immunization histories of all of your patients. Keep track of any missing immunizations and be able to administer those shots during your patient's next appointment. Create and upload new records into your patient's account for them to view later.</p>
-                    </div>                  
-                    <button class="regBtn provider">REGISTER TO UPLOAD AND TRACK IMMUNIZATIONS</button>                    
-                </div>                
+                    </div>
+                    <div class="btn-wrap">
+                        <button class="regBtn provider">REGISTER TO UPLOAD AND TRACK IMMUNIZATIONS</button>
+                    </div>                    
+                </div>
+               
+                <!-- rotating img based on tab selection  -->
                 <img class="selection-img" src="../Images/Tabs/hands.jpg" alt="childrens hands outreached and joining in a circle">                                           
             </div>
-        </div>
+        </div> <!-- end tabs section -->
     </div>
 
     <footer>
