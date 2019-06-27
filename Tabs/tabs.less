@@ -24,10 +24,10 @@
   
         .tabs-link-selected {
           z-index: 2;
-          color: @green;
-          border-bottom: 1px solid @green;
+          color: @purple;
+          border-bottom: 1px solid @purple;
           &:hover {
-          background-color: @green;
+          background-color: @purple;
           color: white;
           }
         }
@@ -39,36 +39,42 @@
     width: 100%;
     height: auto;
     display: flex;
-  
+    margin-top: 15px;
+    
     .tabs-item {
       display: none;  
       height: auto;
       width: 25%;
-      margin: 25px 15px 25px 35%;
+      margin: 25px 15px 25px 30%;
       transition: all .3s ease-in-out;
           
       .tabs-text {
-      
+       
         .tabs-item-title {
           color: gray;
-          font-size: 2.1rem;
-          padding-bottom: 10px;
+          font-size: 2rem;
+          margin: -5px 2px 20px 0; 
         }
 
         .tabs-item-description {
+          width: 98%;
           color: gray;
           font-size: 1.7rem;
           line-height: 2rem;
+          margin-bottom: 5px;
         }
 
       }
 
-     .regBtn {
-        border: none;
+      .regBtn {
+        width: 98%;
+        font-size: 1.6rem;
+        border-style: none;
+        border-radius: 10px;
         color: white;
-        background-color: @green;
-        margin-top: 15px;
-        padding: 5px 10px;
+        background-color: @purple;
+        margin-top: 25px;
+        padding: 15px;
       }    
 
     } 
@@ -80,11 +86,11 @@
   }
 
   .selection-img {
-    border: 1px solid @green;
-    margin: 5px 0;
-    opacity: .9;    
-    max-height: 300px;
-    max-width: 300px;    
+    border: 1px solid @purple;
+    opacity: .9;  
+    margin: 5px 10px 5px 0;  
+    max-height: 235px;
+    max-width: 280px;    
     height: auto;
     width: auto;
     transition: all .5s ease-in-out;
