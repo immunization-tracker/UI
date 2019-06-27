@@ -152,15 +152,13 @@ a {
 }
 header {
   width: 100%;
-  justify-content: space-between;
-  background-color: white;
+  justify-content: flex-start;
   display: flex;
   position: fixed;
   top: 0;
-  margin-left: -1px;
   align-items: baseline;
-  z-index: 100;
-  background: white;
+  z-index: 1001;
+  background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
 }
 @media (max-width: 800px) {
@@ -170,17 +168,20 @@ header {
   }
 }
 header .button-mobile {
-  margin-left: 10px;
-  display: flex;
-  margin-top: 10px;
-  width: 50px;
+  display: none;
+}
+header .button-mobile p {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   header .button-mobile {
     display: flex;
-    width: 40px;
-    border: solid  1px;
-    border-color: black;
+    width: 100%;
   }
 }
 header .logo {
@@ -192,6 +193,7 @@ header .logo {
   header .logo {
     width: 100%;
     margin-top: 0;
+    height: 4rem;
   }
 }
 @media (max-width: 500px) {
@@ -209,6 +211,7 @@ header nav {
   header nav {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 header nav a {
@@ -231,6 +234,11 @@ header nav a:hover {
     text-align: center;
     color: black;
     border-bottom: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    display: none;
   }
 }
 header nav .dropdown {
@@ -297,8 +305,7 @@ header #google_translate_element {
 }
 @media (max-width: 800px) {
   header #google_translate_element {
-    left: 560px;
-    text-decoration: none;
+    display: none;
   }
 }
 .cta {
@@ -480,45 +487,4 @@ footer p {
   height: auto;
   width: auto;
   transition: all 0.5s ease-in-out;
-}
-.team {
-  margin-top: 20px;
-  background: white;
-  border: 2px solid #f79d00;
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  margin-top: 150px;
-  text-align: center;
-}
-.team-members {
-  width: 100%;
-  border: solid  1px;
-  border-color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.team-members .person {
-  margin-left: 20px;
-  position: relative;
-}
-.team-members .person img {
-  width: 300px;
-}
-.team-members .person img:hover {
-  filter: brightness(50%);
-}
-.team-members .person .team-design {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-}
-.team-members .person .team-design h4 {
-  font-size: 2rem;
-  color: white;
-}
-.team-members .person .hidden-text {
-  display: none;
 }
