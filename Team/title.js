@@ -1,1 +1,1 @@
-TweenMax.from('.title-team h1', 2, {scale:2, ease:BounceOut});
+//TweenLite.to('.title-team', 2, {text:"This is the new text", ease:Linear.easeNone});
