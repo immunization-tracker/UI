@@ -40,6 +40,11 @@
     height: auto;
     display: flex;
     margin-top: 15px;
+    @media @phone, @tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+    }
     
     .tabs-item {
       display: none;  
@@ -47,13 +52,18 @@
       width: 25%;
       margin: 25px 15px 25px 30%;
       transition: all .3s ease-in-out;
+      @media @phone, @tablet {
+        width: 80%;
+        margin: 25px auto;
+      }
           
       .tabs-text {
        
         .tabs-item-title {
           color: gray;
           font-size: 2rem;
-          margin: -5px 2px 20px 0; 
+          margin: -5px 2px 20px 0;
+          text-align: center;
         }
 
         .tabs-item-description {
@@ -62,20 +72,35 @@
           font-size: 1.7rem;
           line-height: 2rem;
           margin-bottom: 5px;
+          @media @phone, @tablet {
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+          } 
         }
 
       }
 
-      .regBtn {
-        width: 98%;
-        font-size: 1.6rem;
-        border-style: none;
-        border-radius: 10px;
-        color: white;
-        background-color: @purple;
-        margin-top: 25px;
-        padding: 15px;
-      }    
+      .btn-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        .regBtn {
+          width: auto;
+          font-size: 1.6rem;
+          border-style: none;
+          border-radius: 10px;
+          color: white;
+          background-color: @purple;
+          margin-top: 25px;
+          padding: 15px;
+          @media @phone, @tablet {
+            width: 80%;
+          }
+        } 
+      }   
 
     } 
 
@@ -88,12 +113,16 @@
   .selection-img {
     border: 1px solid @purple;
     opacity: .9;  
-    margin: 5px 10px 5px 0;  
+    
+    // margin: 5px 10px 5px 0;  
     max-height: 235px;
     max-width: 280px;    
     height: auto;
     width: auto;
     transition: all .5s ease-in-out;
+    @media @phone, @tablet {
+      margin: 0 auto;
+    }
   }
   
 } 
