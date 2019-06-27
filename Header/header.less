@@ -1,17 +1,17 @@
 header{
     width:100%;
-    justify-content: flex-start;
     display:flex;
+    justify-content: flex-start;
     position: fixed;
     top:0;
     align-items:baseline;
     z-index: 1001;
     background:linear-gradient(lightseagreen,#f79d00);
-    padding-bottom:10px;
+    padding:10px;
     margin-left: -1px;
     @media @tablet{
         flex-direction: column;
-        padding-bottom: 0;
+        // padding-bottom: 0;
     }
 
     .button-mobile{
@@ -24,7 +24,9 @@ header{
         p{  
             width:100%;
             text-align: center;
-            padding-top: 10px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            // padding-top: 10px;
             padding-bottom: 5px;
             border-bottom: 1px solid black;
             cursor: pointer;
@@ -38,6 +40,7 @@ header{
         @media @tablet{
             width: 100%;
             margin-top:0;
+            margin-bottom: 5px;
             height: 4rem;
         }
         @media @phone{
@@ -51,34 +54,55 @@ header{
         justify-content: flex-start;
         display:flex;
         @media @tablet{
-            flex-direction: column;
-            align-items: center;
+            // flex-direction: column;
+            // align-items: center;
             width:100%;
-            
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media @phone{
+            flex-direction:column;
+            align-items: center;
         }
 
-        a{  
+        .page-links{  
             justify-content: space-between;
             text-decoration: none;
             color: black;
-            padding: 0 25px;
-            margin-left: 2rem;
+            padding: 0 50px;
+            // margin-left: 2rem;
             cursor: pointer;
             &:hover{
                 color: black;
                 text-decoration: underline;
             }
+            &:first-child {
+                margin-left: 2rem;
+            }
             @media @tablet{
                 margin:0;
-                width:90%;
-                padding: 10px 0 10px 0;
+                // width:90%;
+                // padding: 10px 0px 10px 0px;
+                padding: 5px 30px;
                 text-align: center;
                 color:black;
-                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+                &:first-child {
+                    border-left: none;
+                    margin-left: 0;
+                }
+                // border-bottom: 1px solid black;
             }
             @media @phone{
+                padding: 10px 0;
+                width: 100%;
+                border-left: none;
+                border-bottom: 1px solid black;
                 display: none;
             }
+        }
+        .reveal-page-links {
+            display:block;
         }
     }
 
@@ -92,13 +116,15 @@ header{
                 display:none;
             }
 
-            a{
+            .login{
                 text-decoration: none;
                 color: black;
                 font-size: 2rem;
+                border: solid black 1px;
+                padding: 5px;
                 cursor: pointer;
                 &:hover{
-                    color: black;
+                    // color: black;
                     text-decoration: underline;
                 }
             }
@@ -106,27 +132,40 @@ header{
 
         .dropdown-links{
             width:100%;
-            flex-direction: column;
             flex-direction: row;
             display: flex;
             padding-left: 10px;
             justify-content: flex-start;
             @media @tablet{
-                width:90%;
-                margin:0 auto;
-                padding-left: 0;
+                // width:90%;
+                justify-content: space-around;
+                border-top: solid black 1px;
+                // margin:0 auto;
+                // padding-left: 0;
+            }
+            @media @phone {
+                border-top: none;
             }
 
-            a{
+            .sign-in{
                 text-decoration: none;
                 color: black;
                 cursor: pointer;
-                @media @tablet{
-                    color:black;
+                &:last-child {
+                    margin-left: 15px;
                 }
                 &:hover{
                     text-decoration: underline;
                     color:black;
+                }
+                @media @tablet{
+                    padding-top: 10px;
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                    &:after {
+                        content: " Login";
+                    }
                 }
             }
         }
@@ -143,7 +182,7 @@ header{
     #google_translate_element{
         position: absolute;
         top: 0;
-        left: 800px;
+        left: 50%;
         @media @tablet{
             display:none;
         }
