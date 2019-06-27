@@ -8,23 +8,24 @@
     background: white;
     border: 2px solid red;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 
 .pictures{
-    width:100%;
+    width:30%;
+    margin: 0 auto;
     .box(black);
-    display:flex;
-    flex-wrap:wrap;
     justify-content: space-around;
+    flex-direction:row;
+    
     .person{
-        margin-left: 20px;
-        position:relative;
-        width: 300px;
+      display: flex;  
         img{
-            width:100%;
+            margin: 0 auto;
+            width:80%;
             border: 1px solid blue;
             &:hover{
                 filter: brightness(30%);
@@ -45,18 +46,21 @@
 
 
 .info{
-  width: 100%;
-  display: flex;
-  
+  display: flex; 
 }
 .team-design{
   display:none;
+  width: 80%;
+  .box(black);
+  margin: 0 auto;
+  h4{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
 }
 .text-selected{
-  display:flex;
+  display:block;
 }
-// .lead{
-//   position: absolute;
-//  border: 1px solid black;
-//  left: 
-// }
+

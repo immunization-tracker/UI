@@ -470,23 +470,23 @@ footer p {
   background: white;
   border: 2px solid red;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .pictures {
-  width: 100%;
+  width: 30%;
+  margin: 0 auto;
   border: solid  1px;
   border-color: black;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: row;
 }
 .pictures .person {
-  margin-left: 20px;
-  position: relative;
-  width: 300px;
+  display: flex;
 }
 .pictures .person img {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   border: 1px solid blue;
 }
 .pictures .person img:hover {
@@ -502,12 +502,21 @@ footer p {
   background-color: white;
 }
 .info {
-  width: 100%;
   display: flex;
 }
 .team-design {
   display: none;
+  width: 80%;
+  border: solid  1px;
+  border-color: black;
+  margin: 0 auto;
+}
+.team-design h4 {
+  font-size: 2rem;
+}
+.team-design h3 {
+  font-size: 1.6rem;
 }
 .text-selected {
-  display: flex;
+  display: block;
 }
