@@ -160,6 +160,7 @@ header {
   z-index: 1001;
   background: linear-gradient(lightseagreen, #f79d00);
   padding-bottom: 10px;
+  margin-left: -1px;
 }
 @media (max-width: 800px) {
   header {
@@ -170,6 +171,12 @@ header {
 header .button-mobile {
   display: none;
 }
+@media (max-width: 500px) {
+  header .button-mobile {
+    display: flex;
+    width: 100%;
+  }
+}
 header .button-mobile p {
   width: 100%;
   text-align: center;
@@ -177,12 +184,6 @@ header .button-mobile p {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
   cursor: pointer;
-}
-@media (max-width: 500px) {
-  header .button-mobile {
-    display: flex;
-    width: 100%;
-  }
 }
 header .logo {
   margin-top: 15px;
@@ -241,27 +242,27 @@ header nav a:hover {
     display: none;
   }
 }
-header nav .dropdown {
+header .dropdown {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 @media (max-width: 800px) {
-  header nav .dropdown .dropdown-button {
+  header .dropdown .dropdown-button {
     display: none;
   }
 }
-header nav .dropdown .dropdown-button a {
+header .dropdown .dropdown-button a {
   text-decoration: none;
   color: black;
   font-size: 2rem;
   cursor: pointer;
 }
-header nav .dropdown .dropdown-button a:hover {
+header .dropdown .dropdown-button a:hover {
   color: black;
   text-decoration: underline;
 }
-header nav .dropdown .dropdown-links {
+header .dropdown .dropdown-links {
   width: 100%;
   flex-direction: column;
   flex-direction: row;
@@ -270,31 +271,31 @@ header nav .dropdown .dropdown-links {
   justify-content: flex-start;
 }
 @media (max-width: 800px) {
-  header nav .dropdown .dropdown-links {
+  header .dropdown .dropdown-links {
     width: 90%;
     margin: 0 auto;
     padding-left: 0;
   }
 }
-header nav .dropdown .dropdown-links a {
+header .dropdown .dropdown-links a {
   text-decoration: none;
   color: black;
   cursor: pointer;
 }
 @media (max-width: 800px) {
-  header nav .dropdown .dropdown-links a {
+  header .dropdown .dropdown-links a {
     color: black;
   }
 }
-header nav .dropdown .dropdown-links a:hover {
+header .dropdown .dropdown-links a:hover {
   text-decoration: underline;
   color: black;
 }
-header nav .dropdown .dropdown-hidden {
+header .dropdown .dropdown-hidden {
   display: none;
 }
 @media (max-width: 800px) {
-  header nav .dropdown .dropdown-hidden {
+  header .dropdown .dropdown-hidden {
     display: flex;
   }
 }
