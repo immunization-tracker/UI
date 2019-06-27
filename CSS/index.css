@@ -358,39 +358,12 @@ header #google_translate_element {
   z-index: -1;
   display: none;
 }
-.cta h1 {
-  margin-bottom: -77px;
-  align-self: center;
-  font-size: 7.5rem;
-  color: white;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
-  background: rgba(255, 255, 255, 0.2);
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
-  z-index: 2;
-}
-@media (max-width: 800px) {
-  .cta h1 {
-    font-size: 5rem;
-    -webkit-text-stroke-width: 1.2px;
-    margin-bottom: -63px;
-  }
-}
-@media (max-width: 500px) {
-  .cta h1 {
-    font-size: 4rem;
-    -webkit-text-stroke-width: 1px;
-    margin-bottom: -42px;
-  }
-}
 .cta h2 {
   font-size: 4.5rem;
   color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
   align-self: center;
-  margin-top: -5.5rem;
   background: rgba(255, 255, 255, 0.2);
   border-top: solid black 1px;
   border-bottom: solid black 1px;
@@ -400,14 +373,12 @@ header #google_translate_element {
   .cta h2 {
     font-size: 3.5rem;
     -webkit-text-stroke-width: 1.2px;
-    margin-top: -4.5rem;
   }
 }
 @media (max-width: 500px) {
   .cta h2 {
     font-size: 2.5rem;
     -webkit-text-stroke-width: 1px;
-    margin-top: -3.5rem;
   }
 }
 .carousel .img-reveal {
