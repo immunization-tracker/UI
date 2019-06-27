@@ -1,0 +1,124 @@
+.help-container {
+
+    .section {
+    
+        .tabs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        
+            .tabs-links {
+                display: flex;
+                margin-top: 15px;
+            }
+            
+            .tabs-link {
+                text-decoration: none;
+                font-size: 1.75rem;
+                color: darkgray;
+                padding: 10px;
+                transition: all .3s ease-in-out;
+                border-bottom: 1px solid transparent;
+                cursor: pointer;
+                    &:hover {
+                    color: gray;
+                }          
+            }
+        
+            .tabs-link-selected {
+                z-index: 2;
+                color: @purple;
+                border-bottom: 1px solid @purple;
+                &:hover {
+                    background-color: @purple;
+                    color: white;
+                }
+            }
+        }
+        
+        .tabs-items {
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 15px;
+            @media @phone, @tablet {
+                display: flex;
+                flex-direction: column-reverse;
+                align-content: center;
+            }
+        }
+        
+        .tabs-item {
+            display: none;  
+            height: auto;
+            width: 25%;
+            margin: 25px 15px 25px 30%;
+            transition: all .3s ease-in-out;
+            @media @phone, @tablet {
+                width: 80%;
+                margin: 25px auto;
+            }
+        }
+                
+        .tabs-text {
+            
+                .tabs-item-title {
+                    color: gray;
+                    font-size: 2rem;
+                    margin: -5px 2px 20px 0;
+                    text-align: center;
+                }
+    
+                .tabs-item-description {
+                    width: 98%;
+                    color: gray;
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                    margin-bottom: 5px;
+                    @media @phone, @tablet {
+                    margin: 0 auto;
+                    width: 90%;
+                    text-align: center;
+                } 
+            }
+    
+            .btn-wrap {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .regBtn {
+                width: auto;
+                font-size: 1.6rem;
+                border-style: none;
+                border-radius: 10px;
+                color: white;
+                background-color: @purple;
+                margin-top: 25px;
+                padding: 15px;
+                @media @phone, @tablet {
+                    width: 80%;
+                }
+            } 
+        } 
+    
+        .tabs-item-selected {
+            display: block;
+        }
+    
+        .selection-img {
+            border: 1px solid @purple;
+            opacity: .9; 
+            max-height: 235px;
+            max-width: 280px;    
+            height: auto;
+            width: auto;
+            transition: all .5s ease-in-out;
+            @media @phone, @tablet {
+                margin: 0 auto;
+            }
+        }
+    }
+}
