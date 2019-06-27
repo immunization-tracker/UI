@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./Translate/translate.js" async></script> 
     <script src="./Carousel/carousel.js" async></script>
@@ -15,35 +15,37 @@
     <script src="./Header/header.js" async></script>
     <script src="./Header/header-mobile.js" async></script>
     <script src="./Help/help.js" async></script>
-    
 </head>
 
 <header>
-
-    <img class='logo' src="../Images/Logo/caduceus-red.svg"></img>
-
-    <div class="button-mobile">
-        <p>MENU</p>
+    <div class="header-left">
+        <img class='button-mobile' src='../Images/ham-menu.svg'>
+        <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
+    </div>   
+    
+    <div class="header-right">
+        <nav>
+            <a class='page-links' href="index.html" >HOME</a> 
+            <i class="inav"></i>
+            <a class='page-links' href="teammates.html" >TEAM</a>
+            <i class="inav"></i>
+            <a class='page-links' href="#">CONTACT</a>
+            <i class="inav"></i>
+            <a class='page-links' href="help.html">HELP</a>
+            <i class="inav"></i>
+            <div class='dropdown'>
+                <div class="dropdown-button">
+                    <a href='#'>LOGIN</a> 
+                </div>  
+                <div class="dropdown-links dropdown-hidden">
+                    <a class='login-links' href="#">PROVIDER</a>
+                    <a class='login-links' href="#">PATIENT</a>
+                </div>
+            </div>     
+        </nav>
+        <!-- Allow the website to be translated into other languages via Google-->
+        <div id="google_translate_element"></div>
     </div>
-            
-    <nav>
-        <a class='page-links' href="index.html" >HOME</a>
-        <a class='page-links' href="teammates.html" >TEAM</a>
-        <a class='page-links' href="#">CONTACT</a>
-        <a class='page-links' href="help.html">HELP</a>
-        
-        <div class='dropdown'>
-            <div class="dropdown-button"><a class='login' href='#'>Login</a></div>  
-            <div class="dropdown-links dropdown-hidden">
-                <a class='sign-in' href="#">Provider</a>
-                <a class='sign-in' href="#">Patient</a>
-            </div>
-        </div>
-
-    </nav>
-
-    <!-- Allow the website to be translated into other languages via Google-->
-    <div id="google_translate_element"></div>
 </header>
 
 <body class='container help-container'>

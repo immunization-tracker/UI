@@ -7,29 +7,20 @@ header{
     position: fixed;
     top:0; 
     z-index: 100;
+    // .box(pink);
     @media @tablet{
         flex-direction: column;
     }
 
     .header-left {
-        // width: 50%;
         display: flex;
 
         .button-mobile{
             display:none;
-            // @media @phone{
-            //     display: flex;
-            //     width:100%;
-            // }
-
-            p{  
-                width:100%;
-                text-align: center;
-                font-weight: bold;
-                letter-spacing: 5px;
-                padding-bottom: 5px;
-                border-bottom: 1px solid black;
+            @media @phone{
+                display: flex;
                 cursor: pointer;
+                width:100%;
             }
         }
 
@@ -39,9 +30,7 @@ header{
             max-width: 100px;
             @media @tablet{
                 width: 100%;
-                margin-top:0;
-                margin-bottom: 5px;
-                height: 4rem;
+                margin: 15px 0 0;
             }
             @media @phone{
                 display:none;
@@ -50,11 +39,18 @@ header{
         
     }
     
-    
     .header-right {
         display: flex;
         align-items: center;
         min-height: 80px;
+        @media @tablet{
+            min-height: 40px;
+            flex-direction:column;
+        }
+        @media @phone {
+            min-height:0;
+            width: 100%;
+        }
 
         nav{
             width:100%;
@@ -70,43 +66,6 @@ header{
                 flex-direction:column;
                 align-items: center;
             }
-
-            .page-links{  
-                justify-content: space-between;
-                text-decoration: none;
-                color: black;
-                padding: 0 50px;
-                cursor: pointer;
-                &:hover{
-                    color: black;
-                    text-decoration: underline;
-                }
-                &:first-child {
-                    margin-left: 2rem;
-                }
-                @media @tablet{
-                    margin:0;
-                    padding: 5px 30px;
-                    text-align: center;
-                    color:black;
-                    border-left: 1px solid black;
-                    &:first-child {
-                        border-left: none;
-                        margin-left: 0;
-                    }
-                }
-                }
-                @media @phone{
-                    padding: 10px 0;
-                    width: 100%;
-                    border-left: none;
-                    border-bottom: 1px solid black;
-                    display: none;
-                }
-            }
-            .reveal-page-links {
-                display:block;
-            }
         }
 
         a {  
@@ -121,6 +80,22 @@ header{
             }
         }
 
+        .page-links {
+            @media @phone {
+                text-align:center;
+                border-bottom:solid black 2px;
+                width: 100%;
+                display:none;
+                &:first-child {
+                    border-top:solid black 2px;
+                }
+            }
+        }
+
+        .reveal-page-links {
+            display:block;
+        }
+
         .inav {
             transform: skew(-15deg);
             width: 1px;
@@ -130,79 +105,97 @@ header{
             margin: 4px 2px 0 2px;
             box-shadow: 0 3px 0 #dcdcdc;
             z-index: 500;
-        }
-    
-            .dropdown {
-                display: flex;
-                position: relative;
-                flex-direction: row;
-                width: 100;
-                align-self:stretch;
-            
-                .dropdown-button { 
-                    display: flex;
-                    align-items: center;         
-                    @media @tablet {
-                        display:none;
-                    }
-                    
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-size: 1.5rem;
-                        cursor: pointer;
-                        &:hover {
-                            color: white;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            
-                .dropdown-links {
-                    position:absolute;
-                    top: 100%;
-                    min-width:150px;
-                    overflow: auto;
-                    padding-left: 10px;
-                    background-color: blue;
-                    @media @tablet {
-                        width:90%;
-                        margin:0 auto;
-                        padding-left: 0;
-                    }
-                
-                    a {
-                        text-decoration: none;
-                        display: block;
-                        color: white;
-                        cursor: pointer;
-                        
-                        @media @tablet {
-                            color:white;                            
-                        }
-                        &:hover {
-                            text-decoration: underline;
-                            color:white;
-                        }
-                    }
-                }
-            
-                .dropdown-hidden {
-                    display:none;
-                    @media @tablet {
-                        display:flex;
-                    }            
-                }
+            @media @phone {
+                display:none;
             }
         }
-    // }
+    
+        .dropdown {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            width: 100;
+            align-self:stretch;
+            @media @phone {
+                justify-content:space-around;
+            }
+        
+            .dropdown-button { 
+                display: flex;
+                align-items: center;         
+                @media @tablet {
+                    display:none;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    &:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        
+            .dropdown-links {
+                position:absolute;
+                top: 100%;
+                min-width:150px;
+                overflow: auto;
+                background: linear-gradient(0deg,#32006e,#32006e 45%,#76236c); 
+                @media @tablet {
+                    position:static;
+                    background: none;
+                }
+            
+                a {
+                    text-align:center;
+                    text-decoration: none;
+                    display: block;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                        color:white;
+                    }
+                    @media @tablet {
+                        &:after {
+                            content: " LOGIN";
+                        }                         
+                    }
+                    @media @phone {
+                        padding-left: 50px;
+                        padding-right: 50px;
+                    }
+                }
+
+                .login-links {
+                    @media @phone {
+                        display:none;
+                    }
+                }
+
+                .reveal-login-links {
+                    display:block;
+                }
+            }
+        
+            .dropdown-hidden {
+                display:none;
+                @media @tablet {
+                    display:flex;
+                }            
+            }
+        }
+    }
 
     #google_translate_element{
         margin-right: 25px;
-        // @media @tablet{
-        //     left: 560px;
-        //     text-decoration: none;
-        // }
+        @media @tablet{
+            display:none;
+        }
 
         .goog-te-gadget-simple {
             width: 175px;
@@ -212,4 +205,4 @@ header{
             display: none;
         }
     }
-// }
+}
