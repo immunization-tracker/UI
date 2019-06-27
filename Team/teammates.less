@@ -18,12 +18,13 @@
     .box(black);
     display:flex;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: space-around;
     .person{
         margin-left: 20px;
         position:relative;
+        width: 300px;
         img{
-            width:100px;
+            width:100%;
             border: 1px solid blue;
             &:hover{
                 filter: brightness(30%);
@@ -32,15 +33,15 @@
       }   
 }
 
-// .person-selected{
-//     z-index: 2;
-//     border-right: 1px solid red;
-//     background-color: white;
-//     color: black;
-//     &:hover {
-//       background-color: white;
-//     }
-// }
+.person-selected{
+    z-index: 2;
+    border-right: 1px solid red;
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: white;
+    }
+}
 
 
 .info{
@@ -52,7 +53,7 @@
   display:none;
 }
 .text-selected{
-  display:block;
+  display:flex;
 }
 // .lead{
 //   position: absolute;

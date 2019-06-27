@@ -478,18 +478,28 @@ footer p {
   border-color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .pictures .person {
   margin-left: 20px;
   position: relative;
+  width: 300px;
 }
 .pictures .person img {
-  width: 100px;
+  width: 100%;
   border: 1px solid blue;
 }
 .pictures .person img:hover {
   filter: brightness(30%);
+}
+.person-selected {
+  z-index: 2;
+  border-right: 1px solid red;
+  background-color: white;
+  color: black;
+}
+.person-selected:hover {
+  background-color: white;
 }
 .info {
   width: 100%;
@@ -499,5 +509,5 @@ footer p {
   display: none;
 }
 .text-selected {
-  display: block;
+  display: flex;
 }

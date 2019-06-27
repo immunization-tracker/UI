@@ -9,7 +9,7 @@ class ImageTab {
     
       this.textItem = new TabItemTeam(this.imgText);
   
-      this.element.addEventListener('click', () => this.select());
+      this.element.addEventListener('mouseover', () => this.select());
     };
   
     select() {
