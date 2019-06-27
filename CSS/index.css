@@ -304,7 +304,6 @@ header #google_translate_element {
 .cta {
   display: flex;
   flex-direction: column;
-  margin-top: 110px;
 }
 .cta .cta-img {
   width: 100%;
@@ -319,6 +318,7 @@ header #google_translate_element {
 }
 .cta h1 {
   margin-bottom: -9.5rem;
+  margin-top: 1.8rem;
   align-self: center;
   font-size: 7.5rem;
   color: white;
