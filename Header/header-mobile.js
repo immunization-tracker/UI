@@ -1,8 +1,10 @@
 class Mobile{
     constructor(event){
         this.event = event;
-        this.button = document.querySelector('.button-mobile p');
-        this.links = document.querySelectorAll('.page-links');
+        this.button = document.querySelector('.button-mobile')
+        this.links = document.querySelectorAll('.page-links')
+        this.loginlinks = document.querySelectorAll('.login-links')
+
         this.button.addEventListener('click', ()=> {
             this.showMobileMenu();
         })
@@ -10,6 +12,7 @@ class Mobile{
     }
     showMobileMenu(){
         this.links.forEach(link => link.classList.toggle('reveal-page-links'))
+        this.loginlinks.forEach(link => link.classList.toggle('reveal-login-links'))
     }
 }
 
