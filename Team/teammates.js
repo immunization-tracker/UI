@@ -1,57 +1,55 @@
-// class TabLinkTeam {
-//     constructor(element) {
-//       // Assign this.element to the passed in DOM element
-//       this.element = element;
+class ImageTab {
+    constructor(element) {
+  
+      this.element = element;
+  
+      this.data = this.element.dataset.tab;
+   
+      this.imgText = document.querySelector(`.team-design[data-tab='${this.data}']`);
+    
+      this.textItem = new TabItemTeam(this.imgText);
+  
+      this.element.addEventListener('click', () => this.select());
+    };
+  
+    select() {
+   
+      const pictures = document.querySelectorAll('.person');
+ 
+      Array.from(pictures).forEach(img => {
+        img.classList.remove('person-selected');
+      })
       
-  
-//       //Get the custom data attribute on the Link
-//       this.data = this.element.dataset.team;
-//       // Using the custom data attribute get the associated Item element
-//       this.itemElement = document.querySelector(`.tabs-item-team[data-team='${this.data}']`);
-//       // Using the Item element, create a new instance of the TabItem class
-//       this.tabItem = new TabItemTeam(this.itemElement);
-//       // Add a click event listener on this instance, calling the select method on click
-//       this.element.addEventListener('click', () => this.select());
-//     };
-  
-//     select() {
-//       // Get all of the elements with the tabs-link class
-//       const links = document.querySelectorAll('.tabs-link-team');
-//       // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
-//       Array.from(links).forEach(link => {
-//         link.classList.remove('tabs-link-team-selected');
-//       })
+
+      this.element.classList.add('person-selected');
       
-//       // Add a class named "tabs-link-selected" to this link
-//       this.element.classList.add('tabs-link-team-selected');
-      
-//       // Call the select method on the item associated with this link
-//       this.tabItem.select();
-//     }
-//   }
+ 
+      this.textItem.select();
+    }
+  }
   
-//   class TabItemTeam {
-//     constructor(element) {
-//       // Assign this.element to the passed in element
-//       this.element = element;
-//       //console.log(this.element);
-//     }
+  class TabItemTeam {
+    constructor(element) {
+ 
+      this.element = element;
+
+    }
   
-//     select() {
-//       // Select all ".tabs-item" elements from the DOM
-//       const items = document.querySelectorAll('.tabs-item-team');
+    select() {
   
-//       // Remove the class "tabs-item-selected" from each element
-//       Array.from(items).forEach(item => {
-//         item.classList.remove('tabs-item-team-selected');
-//       })
-//       // Add a class named "tabs-item-selected" to this element
-//       this.element.classList.add('tabs-item-team-selected');
-//     }
-//   }
+      const items = document.querySelectorAll('.team-design');
+  
+  
+      Array.from(items).forEach(item => {
+        item.classList.remove('text-selected');
+      })
+  
+      this.element.classList.add('text-selected');
+    }
+  }
   
 
   
-//   let links = document.querySelectorAll('.tabs-team .tabs-links-team .tabs-link-team').forEach(link => new TabLinkTeam(link));
+  let pictures = document.querySelectorAll('.team-members .pictures .person').forEach(img => new ImageTab(img));
   
 

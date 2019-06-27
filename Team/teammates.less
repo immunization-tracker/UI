@@ -1,17 +1,19 @@
-.team{
+.title{
+  margin-top:150px;
+  text-align: center;
+}
+
+.team-members{
     margin-top:20px;
     background: white;
-    border: 2px solid #f79d00;
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
 }
 
-.title{
-    margin-top:150px;
-    text-align: center;
-}
 
-.team-members{
+
+.pictures{
     width:100%;
     .box(black);
     display:flex;
@@ -21,76 +23,37 @@
         margin-left: 20px;
         position:relative;
         img{
-            width:300px;
+            width:100px;
             &:hover{
-                filter: brightness(50%);
+                filter: brightness(30%);
             }
-        }
-        .team-design{
-            position:absolute;
-            top: 100px;
-            left: 100px;
-            h4{
-                font-size:2rem;
-                color:white;
-            }
-        }
-        .hidden-text{
-            display:none;
-        }
+          }
+      }   
+}
+
+.person-selected{
+    z-index: 2;
+    border-right: 1px solid red;
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: white;
     }
 }
 
 
-.tabs-team {
-    margin-top:300px;
-    width: 100%;
-    .tabs-items {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      justify-content: center;
-      padding-top: 60px;
-    }
-    .tabs-item-team {
-      display: none; 
-  
-      width: 75%;
-      .tabs-item-team-title {
-        font-size: 24px;
-        font-weight: bold;
-        padding-bottom: 10px;
-      }
-    }
-    .tabs-item-team-selected {
-      display: block;
-    }
-  
-    .tabs-links-team {
-      display: flex;
-      background-color: red;
-    }
-  
-    .tabs-link-team {
-      padding: 20px 25px;
-      font-size: 24px;
-      background-color:red;
-      border-right: 1px solid black;
-      color: black;
-      cursor: pointer;
-      &:hover {
-        background-color: lightblue;
-      }
-    }
-    .tabs-link-team-selected {
-      z-index: 2;
-      border-right: 1px solid red;
-      background-color: white;
-      color: black;
-      &:hover {
-        background-color: white;
-      }
-    }
-  }
-  
-  
+.info{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.team-design{
+  display:none;
+
+  width: 75%;
+}
+.text-selected{
+  display:block;
+}
