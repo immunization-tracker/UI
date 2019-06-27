@@ -132,6 +132,7 @@ table {
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
+  overflow-y: hidden;
 }
 @media (max-width: 800px) {
   html {
