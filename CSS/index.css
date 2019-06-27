@@ -159,7 +159,7 @@ header {
   margin-left: -1px;
   align-items: baseline;
   z-index: 100;
-  background: linear-gradient(lightseagreen, #f79d00);
+  background: white;
   padding-bottom: 10px;
 }
 @media (max-width: 800px) {
@@ -467,7 +467,7 @@ footer p {
   margin-top: 15px;
   padding: 5px 10px;
 }
-.section .tabs-items .tabs-item .selected {
+.section .tabs-items .tabs-item-selected {
   display: block;
 }
 .section .selection-img {
