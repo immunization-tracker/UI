@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <head>
     <meta charset="utf-8">
     <title>Immunization Tracker</title>
@@ -5,36 +8,37 @@
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="./Header/header.js" async></script>
-    <script src="./Header/header-mobile.js" async></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./Translate/translate.js" async></script> 
     <script src="./Carousel/carousel.js" async></script>
     <script src="./Tabs/tabs.js" async></script>
-    <script src="./Help/help.js" async></script>
+    <script src="./Header/header.js" async></script>
+    <script src="./Header/header-mobile.js" async></script>
     
 </head>
 
 <header>
-    <div class="button-mobile">
-        <i class="em em-anchor"></i>
-    </div> 
+
     <img class='logo' src="../Images/Logo/caduceus-red.svg"></img>
-    <nav>
+
+    <div class="button-mobile">
+        <p>MENU</p>
+    </div>
             
     <nav>
-        <a href="index.html" >HOME</a>
-        <a href="teammates.html" >TEAM</a>
-        <a href="#">CONTACT</a>
-        <a href="help.html">HELP</a>
+        <a class='page-links' href="index.html" >HOME</a>
+        <a class='page-links' href="teammates.html" >TEAM</a>
+        <a class='page-links' href="#">CONTACT</a>
+        <a class='page-links' href="help.html">HELP</a>
+        
         <div class='dropdown'>
-            <div class="dropdown-button"><a href='#'>Login</a> </div>  
-                <div class="dropdown-links dropdown-hidden">
-                    <a href="#">Provider</a>
-                    <a href="#">Patient</a>
-                </div>
+            <div class="dropdown-button"><a class='login' href='#'>Login</a></div>  
+            <div class="dropdown-links dropdown-hidden">
+                <a class='sign-in' href="#">Provider</a>
+                <a class='sign-in' href="#">Patient</a>
             </div>
         </div>
+
     </nav>
 
     <!-- Allow the website to be translated into other languages via Google-->
