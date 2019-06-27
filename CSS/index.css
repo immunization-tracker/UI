@@ -144,8 +144,6 @@ a {
   font-size: 1.6rem;
 }
 .container {
-  border: solid  1px;
-  border-color: red;
   margin: 0 auto;
   max-width: 100vw;
   margin-top: 107px;
@@ -157,7 +155,7 @@ a {
 }
 @media (max-width: 500px) {
   .container {
-    margin-top: 69px;
+    margin-top: 68px;
   }
 }
 header {
@@ -170,9 +168,6 @@ header {
   z-index: 1001;
   background: linear-gradient(lightseagreen, #f79d00);
   padding: 10px;
-  margin-left: -1px;
-  border: solid  1px;
-  border-color: purple;
 }
 @media (max-width: 800px) {
   header {
@@ -488,7 +483,6 @@ footer p {
   width: 100%;
   height: auto;
   display: flex;
-  overflow: scroll;
 }
 .section .tabs-items .tabs-item {
   display: none;
