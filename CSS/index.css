@@ -132,17 +132,6 @@ table {
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
-  overflow-y: hidden;
-}
-@media (max-width: 800px) {
-  html {
-    overflow-y: auto;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    overflow-y: auto;
-  }
 }
 body {
   background-color: #f5f5f5;
@@ -584,7 +573,7 @@ footer p {
     margin: 0 auto;
   }
 }
-.title {
+.title-team {
   margin-top: 100px;
   text-align: center;
 }
@@ -599,7 +588,7 @@ footer p {
   width: 30%;
   margin: 0 auto;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
 }
 .pictures .person {
   display: flex;
@@ -608,9 +597,6 @@ footer p {
   margin: 0 auto;
   width: 60%;
   box-shadow: 3px 0 5px grey;
-}
-.pictures .person img:hover {
-  filter: brightness(50%);
 }
 .person-selected img {
   z-index: 2;
@@ -629,12 +615,39 @@ footer p {
   margin: 0 auto;
   box-shadow: 3px 0 5px grey;
 }
+@media (max-width: 800px) {
+  .team-design {
+    display: block;
+  }
+}
 .team-design h4 {
   font-size: 2rem;
   padding-bottom: 5px;
 }
+@media (max-width: 800px) {
+  .team-design h4 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
 .team-design h3 {
   font-size: 1.6rem;
+}
+@media (max-width: 800px) {
+  .team-design h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .team-design hr {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .team-design ul {
+    display: none;
+  }
 }
 .text-selected {
   display: block;

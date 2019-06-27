@@ -1,4 +1,4 @@
-.title{
+.title-team{
   margin-top:100px;
   text-align: center;
 }
@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 
@@ -17,17 +18,14 @@
     width:30%;
     margin: 0 auto;
     justify-content: space-around;
-    flex-direction:row;
-    
+    flex-direction:column;
     .person{
       display: flex;  
         img{
             margin: 0 auto;
             width:60%;
             box-shadow: 3px 0 5px grey;
-            &:hover{
-                filter: brightness(50%);
-            }
+            
           }
       }   
 }
@@ -50,15 +48,35 @@
   border: 2px solid darkblue;
   margin: 0 auto;
   box-shadow: 3px 0 5px grey;
+  @media @tablet{
+    display: block;
+  }
   h4{
     font-size: 2rem;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
+    @media @tablet{
+      text-align: center;
+      font-size: 1.6rem;
+    } 
   }
   h3{
     font-size: 1.6rem;
+    @media @tablet{
+      font-size: 1.2rem;
+      text-align: center;
+    } 
+  }
+  hr{
+    @media @tablet{
+      display: none;
+    } 
+  }
+  ul{
+    @media @tablet{
+      display: none;
+    }
   }
 }
 .text-selected{
   display:block;
 }
-
