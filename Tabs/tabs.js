@@ -29,18 +29,21 @@ class TabLink {
       // Reference the img element with the class '.selection-img' 
       this.img = document.querySelector('.selection-img')
 
-      // Sets the img src attribute to the img that corresponds with the selected tabLink
+      // Sets the img src and alt attributes to the img that corresponds with the selected tabLink
       switch(this.link.innerHTML) {
         case 'PARENT':
           this.img.setAttribute('src', "../Images/Tabs/hands.jpg")
+          this.img.setAttribute('alt', "childrens hands outreached and joining in a circle")
           break;
 
         case 'PATIENT':
           this.img.setAttribute('src', '../Images/Tabs/stethoscope.jpg')
+          this.img.setAttribute('alt', "a teal stethoscope lying next to a large, red, heart shaped pin")
           break;
 
         case 'PROVIDER':
           this.img.setAttribute('src', '../Images/Tabs/pediatric.jpg')
+          this.img.setAttribute('alt', "a smiling, female pediatrician talking with a young boy sitting on an exam table")
           break;
       }
       
