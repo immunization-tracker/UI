@@ -383,7 +383,7 @@ header #google_translate_element .goog-te-gadget-icon {
   flex-direction: column;
 }
 .cta .cta-img {
-  border: 1px solid #5d348b;
+  border: 1px solid #32006e;
   margin: 15px auto;
   width: 60%;
   opacity: 0.9;
@@ -393,7 +393,7 @@ header #google_translate_element .goog-te-gadget-icon {
 .cta h2 {
   font-size: 4.5rem;
   font-weight: 400;
-  color: #5d348b;
+  color: #32006e;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 1px;
   align-self: center;
@@ -482,11 +482,11 @@ footer p {
 }
 .section .tabs .tabs-links .tabs-link-selected {
   z-index: 2;
-  color: #5d348b;
-  border-bottom: 1px solid #5d348b;
+  color: #32006e;
+  border-bottom: 1px solid #32006e;
 }
 .section .tabs .tabs-links .tabs-link-selected:hover {
-  background-color: #5d348b;
+  background-color: #32006e;
   color: white;
 }
 .section .tabs-items {
@@ -547,7 +547,7 @@ footer p {
   border-style: none;
   border-radius: 10px;
   color: white;
-  background-color: #5d348b;
+  background-color: #32006e;
   margin-top: 25px;
   padding: 15px;
 }
@@ -560,7 +560,7 @@ footer p {
   display: block;
 }
 .section .selection-img {
-  border: 1px solid #5d348b;
+  border: 1px solid #32006e;
   opacity: 0.9;
   max-height: 235px;
   max-width: 280px;
@@ -596,11 +596,11 @@ footer p {
 }
 .help-container .section .tabs .tabs-link-selected {
   z-index: 2;
-  color: #5d348b;
-  border-bottom: 1px solid #5d348b;
+  color: #32006e;
+  border-bottom: 1px solid #32006e;
 }
 .help-container .section .tabs .tabs-link-selected:hover {
-  background-color: #5d348b;
+  background-color: #32006e;
   color: white;
 }
 .help-container .section .tabs-items {
@@ -661,7 +661,7 @@ footer p {
   border-style: none;
   border-radius: 10px;
   color: white;
-  background-color: #5d348b;
+  background-color: #32006e;
   margin-top: 25px;
   padding: 15px;
 }
@@ -674,7 +674,7 @@ footer p {
   display: block;
 }
 .help-container .section .selection-img {
-  border: 1px solid #5d348b;
+  border: 1px solid #32006e;
   opacity: 0.9;
   max-height: 235px;
   max-width: 280px;
