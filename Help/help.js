@@ -5,6 +5,11 @@ class Accordion {
         this.autoClose = accordion.dataset.autoClose === 'true' ? true : false
         this.panels = accordion.querySelectorAll('.panel')
         this.panels.forEach(panel => new Panel(panel, this))
+
+        document.addEventListener('click', event => {
+            if (event.target.closest('.accordion')) return
+            this.collapse()
+        })
     }
       
     collapse() {
@@ -21,7 +26,7 @@ class Panel {
         this.openButton = panel.querySelector('.panel-btn-open')
         this.closeButton = panel.querySelector('.panel-btn-close')
         this.panelContent = panel.querySelector('.panel-content')
-        this.closeButton.addEventListener('click', () => this.togglePanel())
+        this.openButton.addEventListener('click', () => this.togglePanel())
     }
     
     togglePanel() {

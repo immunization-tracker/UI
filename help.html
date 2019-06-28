@@ -10,14 +10,14 @@
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript" src="./Translate/translate.js" async></script> 
-    <!-- <script type="text/javascript" src="./Carousel/carousel.js" async></script> -->
+    <script type="text/javascript" src="./Carousel/carousel.js" async></script>
     <script type="text/javascript" src="./Tabs/tabs.js" async></script>
     <script type="text/javascript" src="./Header/header.js" async></script>
     <script type="text/javascript" src="./Header/header-mobile.js" async></script>
     <script type="text/javascript" src="./Help/help.js" async></script>
 </head>
 
-<header>
+<header class='help-header'>
     <div class="header-left">
         <img class='button-mobile' src='../Images/ham-menu.svg'>
         <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
@@ -49,9 +49,64 @@
 </header>
 
 <body class='container help-container'>
-    <!-- <div class='' -->
+    
+    <!-- <div class='carousel'>
+        <img class='cta-img img-reveal' src="../Images/CTA/fam.jpg" alt="full family smiling">
+        <img class='cta-img' src="../Images/CTA/familytickle.jpg" alt="parents playing with children">
+        <img class='cta-img' src="../Images/CTA/grandparentschildren.jpg" alt="grandparents with grandchildren">
+    </div> -->
+
     <h1>How can we help you?</h1>
     <input type="text" placeholder="Describe your issue">
+
+    <h2>Recently Asked Questions</h2>
+    <!-- raq accordion -->
+    <section class="raq">
+        <div class="accordion" data-questions data-auto-close='true'>
+
+
+            <div class="panel">
+                <div class="panel-bar">
+                    <h3>Where's the night mode button?</h3>
+                    <div class="panel-buttons">
+                        <button class="panel-btn-open">Open</button>
+                        <button class="panel-btn-close hide-btn">Close</button>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>Our night mode setting is currently in beta! You can click <a href='#'>here</a> to try it!</p>
+                </div>
+            </div><!-- end of panel -->
+
+            <div class="panel">
+                <div class="panel-bar">
+                    <h3>Question 2</h3>
+                    <div class="panel-buttons">
+                        <button class="panel-btn-open">Open</button>
+                        <button class="panel-btn-close hide-btn">Close</button>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>Short, sweet answer.</p>
+                </div>
+            </div><!-- end of panel -->
+                
+            <div class="panel">
+                <div class="panel-bar">
+                    <h3>Question 3</h3>
+                    <div class="panel-buttons">
+                        <button class="panel-btn-open">Open</button>
+                        <button class="panel-btn-close hide-btn">Close</button>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>Short, sweet answer.</p>
+                </div>
+            </div><!-- end of panel -->  
+
+        </div>
+    </section>
+
     <h2>Frequently Asked Questions For</h2>
 
     <!-- Tabs Section -->
@@ -63,7 +118,6 @@
                 <div class="tabs-link tabs-link-selected" data-tab="1">PARENTS</div>
                 <div class="tabs-link" data-tab="2">PATIENTS</div>
                 <div class="tabs-link" data-tab="3">PROVIDERS</div>
-                <div class="tabs-link" data-tab="3">OTHERS</div>
             </div>
         </div>
 
@@ -74,8 +128,9 @@
             <div class="tabs-item tabs-item-selected" id="parent" data-tab="1">
                 <div class='tabs-text'>
 
-                    <section class="secondary">
-                        <div class="accordion" data-questions lambda-auto-close='true'>
+                    <!-- faq accordion 1 -->
+                    <section class="faq">
+                        <div class="accordion" data-questions data-auto-close='true'>
                             <div class="panel">
                                 <div class="panel-bar">
                                     <h3>Question 1</h3>
@@ -136,8 +191,12 @@
             <!-- tab 2 -->
             <div class="tabs-item" id="patient" data-tab="2">
                 <div class='tabs-text'>
-                    <section class="secondary">
-                        <div class="accordion" data-questions lambda-auto-close='true'>
+
+                    <!-- faq accordion 2 -->
+                    <section class="faq">
+                        <div class="accordion" data-questions data-auto-close='true'>
+
+
                             <div class="panel">
                                 <div class="panel-bar">
                                     <h3>Question 1</h3>
@@ -198,8 +257,10 @@
             <!-- tab 3 -->
             <div class="tabs-item" id="provider" data-tab="3">
                 <div class='tabs-text'>
-                    <section class="secondary">
-                        <div class="accordion" data-questions lambda-auto-close='true'>
+
+                    <!-- faq accordion 3 -->
+                    <section class="faq">
+                        <div class="accordion" data-questions data-auto-close='true'>
                             <div class="panel">
                                 <div class="panel-bar">
                                     <h3>Question 1</h3>
