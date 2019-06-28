@@ -1,12 +1,17 @@
 /***************************************** Button attributes object *************************************************** */
 const btnAttrs = {
-    width : 'auto',
-    fontSize: '1.5rem',    
-    'border-style': 'none',
-    'border-radius': '50px',
+    backgroundColor: '#4c1b87',        
+    border: 'none',
+    'border-radius': '10px',
     color: 'white',
-    backgroundColor: '#32006e',
-    padding: '15px 25px'
+    cursor: 'pointer',
+    fontSize: '1.5rem',
+    margin: '25px',
+    outline: 'none',
+    padding: '18px',
+    'text-align' : 'center',
+    transition: '0.4s',
+    width : '200px',
 }
 
 
@@ -29,19 +34,24 @@ class Button {
         this.button.setAttribute('id', `btn-${counter()}`)
         
         // get / set button style attributes from the 'btnAttrs' object   
-        button.style.width = btnAttrs.width
-        button.style.fontSize = btnAttrs.fontSize
-        button.style.borderStyle = btnAttrs['border-style']
+        button.style.backgroundColor = btnAttrs.backgroundColor
+        button.style.border = btnAttrs.border
         button.style.borderRadius = btnAttrs['border-radius']
         button.style.color = btnAttrs.color
-        button.style.backgroundColor = btnAttrs.backgroundColor
+        button.style.cursor = btnAttrs.cursor
+        button.style.fontSize = btnAttrs.fontSize
+        button.style.margin = btnAttrs.margin
+        button.style.outline = btnAttrs.outline
         button.style.padding = btnAttrs.padding
-
+        button.style.textAlign = btnAttrs['text-align']
+        button.style.transition = btnAttrs.transition
+        button.style.width = btnAttrs.width        
     }
+
 }
 
 // Get DOM elements with class '.btn' and store them in 'buttons'
-buttons = document.querySelectorAll('.btn')
+const buttons = document.querySelectorAll('.btn')
 
 // Iterate over the 'buttons' Nodelist and create a new object for each element
 buttons.forEach(button => new Button(button))

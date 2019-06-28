@@ -718,3 +718,9 @@ footer p {
   font-size: 4.5rem;
   font-weight: 400;
 }
+.contact-body-container .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30% 0 15% 0;
+}
