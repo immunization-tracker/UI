@@ -6,14 +6,24 @@ class Mobile{
         this.loginlinks = document.querySelectorAll('.login-links')
 
         this.button.addEventListener('click', ()=> {
-            this.showMobileMenu();
+            this.toggleMobileMenu();
         })
 
+        document.addEventListener('click', event => {
+            if (event.target.closest('.button-mobile')) return
+            if (event.target.closest('nav')) return
+            this.hideMobileMenu()
+        })
     }
-    showMobileMenu(){
+    toggleMobileMenu(){
         this.links.forEach(link => link.classList.toggle('reveal-page-links'))
         this.loginlinks.forEach(link => link.classList.toggle('reveal-login-links'))
     }
+    hideMobileMenu(){
+        this.links.forEach(link => link.classList.remove('reveal-page-links'))
+        this.loginlinks.forEach(link => link.classList.remove('reveal-login-links'))
+    }
+
 }
 
 let mobileButton = document.querySelectorAll('.button-mobile').forEach(event => new Mobile(event));
