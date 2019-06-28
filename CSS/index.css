@@ -171,6 +171,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
+  box-shadow: 0px 2px 5px grey;
 }
 @media (max-width: 800px) {
   header {
