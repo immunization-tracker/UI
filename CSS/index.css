@@ -578,6 +578,7 @@ footer p {
     margin: 0 auto;
   }
 }
+<<<<<<< HEAD
 .help-container h1 {
   font-size: 4rem;
   text-align: center;
@@ -649,5 +650,99 @@ footer p {
   display: none;
 }
 .help-container [data-questions] .panel .toggle-on {
+  display: block;
+=======
+.title-team {
+  margin-top: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+@media (max-width: 800px) {
+  .title-team {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .title-team {
+    margin-top: 100px;
+  }
+}
+.team-members {
+  margin-top: 20px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pictures {
+  width: 30%;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pictures .person {
+  display: flex;
+}
+.pictures .person img {
+  margin: 0 auto;
+  width: 60%;
+  box-shadow: 3px 0 5px grey;
+  max-height: 250px;
+}
+.person-selected img {
+  z-index: 2;
+  border: 2px solid darkblue;
+}
+.person-selected img:hover {
+  background-color: white;
+}
+.info {
+  display: flex;
+}
+.team-design {
+  display: none;
+  width: 60%;
+  border: 2px solid darkblue;
+  margin: 0 auto;
+  box-shadow: 3px 0 5px grey;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .team-design {
+    display: block;
+    background: white;
+    border: none;
+  }
+}
+.team-design h4 {
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+@media (max-width: 800px) {
+  .team-design h4 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+.team-design h3 {
+  font-size: 1.6rem;
+}
+@media (max-width: 800px) {
+  .team-design h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .team-design hr {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .team-design ul {
+    display: none;
+  }
+>>>>>>> ff49d7165fb0ae5650d0a268b899f90343136488
+}
+.text-selected {
   display: block;
 }
