@@ -679,38 +679,71 @@ footer p {
   font-size: 4rem;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .help-container h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .help-container h1 {
+    font-size: 3rem;
+  }
+}
 .help-container h2 {
   font-size: 3rem;
   text-align: center;
 }
-.help-container h3 {
-  font-size: 2rem;
-}
-.help-container .search-question {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.help-container .search-question .search-bar {
-  width: 300px;
-}
-.help-container .raq-header {
-  margin-bottom: 2rem;
-}
-.help-container .raq {
-  transition: all 0.3s ease-in-out;
-  margin: 0 15% 3.5rem;
-}
 @media (max-width: 800px) {
-  .help-container .raq {
-    margin: 0 10% 3.5rem;
+  .help-container h2 {
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 500px) {
-  .help-container .raq {
-    margin: 0 5% 3.5rem;
+  .help-container h2 {
+    font-size: 2.4rem;
   }
+}
+.help-container h3 {
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .help-container h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .help-container h3 {
+    font-size: 1.6rem;
+  }
+}
+.help-container .search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 3rem;
+}
+.help-container .search-bar .search-icon {
+  padding-right: 10px;
+  cursor: pointer;
+}
+.help-container .search-bar .search-box {
+  width: 500px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: solid black 1px;
+}
+@media (max-width: 800px) {
+  .help-container .search-bar .search-box {
+    width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .help-container .search-bar .search-box {
+    width: 400px;
+  }
+}
+.help-container .search-bar .search-box:focus {
+  border-color: #5d348b;
+  outline: none;
 }
 .help-container .carousel {
   display: flex;
@@ -751,8 +784,10 @@ footer p {
 .help-container [data-questions] .panel .panel-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: rgba(118, 54, 148, 0.2);
-  padding: 5px;
+  padding: 10px;
+  border-radius: 15px;
   cursor: pointer;
 }
 .help-container [data-questions] .panel .panel-bar .panel-buttons .hide-btn {

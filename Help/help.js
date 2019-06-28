@@ -48,3 +48,5 @@ class Panel {
     
 const accordions = document.querySelectorAll('[data-questions]')
 accordions.forEach(accordion => new Accordion(accordion))
+
+document.querySelector('.search-icon').addEventListener('click', () => alert('Search functionality currently down. Please try again later.'))

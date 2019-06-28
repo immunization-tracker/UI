@@ -5,39 +5,69 @@
     h1 {
         font-size: 4rem;
         text-align: center;
+
+        @media @tablet {
+            font-size: 3.5rem;
+        }
+
+        @media @phone {
+            font-size: 3rem;
+        }
     }
     
     h2 {
         font-size: 3rem;
         text-align: center;
+
+        @media @tablet {
+            font-size: 2.8rem;
+        }
+        
+        @media @phone {
+            font-size: 2.4rem;
+        }
     }
     
     h3 {
         font-size: 2rem;
-    }
 
-    .search-question {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2rem;
-        .search-bar {
-            width: 300px;
-        }
-    }
-
-    .raq-header {
-        margin-bottom: 2rem;
-    }
-
-    .raq {
-        transition: all .3s ease-in-out;
-        margin: 0 15% 3.5rem;
         @media @tablet {
-            margin: 0 10% 3.5rem;
+            font-size: 1.8rem;
         }
+        
         @media @phone {
-            margin: 0 5% 3.5rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 3rem;
+
+        .search-icon {
+            padding-right: 10px;
+            cursor: pointer;
+        }
+
+        .search-box {
+            width: 500px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: solid black 1px;
+
+            @media @tablet {
+                width: 450px;
+            }
+            
+            @media @phone {
+                width: 400px;
+            }
+
+            &:focus {
+                border-color: @purple;
+                outline: none;
+            }
         }
     }
 
@@ -90,8 +120,10 @@
             .panel-bar {
                 display: flex;
                 justify-content: space-between;
+                align-items:center;
                 background: rgba(118, 54, 148, 0.2);
-                padding: 5px;
+                padding: 10px;
+                border-radius: 15px;
                 cursor: pointer;
             
                 .panel-buttons {
