@@ -49,4 +49,17 @@ class Panel {
 const accordions = document.querySelectorAll('[data-questions]')
 accordions.forEach(accordion => new Accordion(accordion))
 
+// @@@@@@@@@@@@@@@@@@@@ Search Bar @@@@@@@@@@@@@@@@@@@@
 document.querySelector('.search-icon').addEventListener('click', () => alert('Search functionality currently down. Please try again later.'))
+
+// @@@@@@@@@@@@@@@@@@@@ Night Mode @@@@@@@@@@@@@@@@@@@@
+const nightModeButton = document.querySelector('.night-mode-button')
+nightModeButton.addEventListener('click', () => {
+    if (nightModeButton.textContent === 'Night Mode') {
+        nightModeButton.textContent = 'Day Mode'
+    } else {
+        nightModeButton.textContent = 'Night Mode'
+    }
+
+    document.querySelector('body').classList.toggle('night-mode-toggle')
+})

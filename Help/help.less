@@ -12,6 +12,7 @@
 
         @media @phone {
             font-size: 3rem;
+            margin-top: 2rem;
         }
     }
     
@@ -71,24 +72,29 @@
         }
     }
 
-
     // @@@@@@@@@@@@@@@@@@@@ Carousel Styling @@@@@@@@@@@@@@@@@@@@
     .carousel {
+        margin: 4rem 0;
         display:flex;
+        justify-content: center;
+        @media @phone {
+            display: none;
+        }
+
+        .img-reveal{
+            display: block;
+            animation: fadeIn 5s;
+        }
     }
-    .cta-img {
-        border: 1px solid @purple;
-        // margin: 15px auto;
-        width: 60%;
+    .help-img {
+        border: 2px solid @purple;
+        width: 250px;
+        height: 250px;
         opacity: 0.9;
         z-index:10;
         border-radius:50%;
         display:none;
-        @media @phone {
-            width: 80%;
-        }
     }
-
 
     // @@@@@@@@@@@@@@@@@@@@ Tabs Styling @@@@@@@@@@@@@@@@@@@@
     .section {
@@ -108,14 +114,11 @@
         }
     }
     
-
     // @@@@@@@@@@@@@@@@@@@@ Accordion Styling @@@@@@@@@@@@@@@@@@@@
     [data-questions] {
         
         .panel {
-            
             padding: 15px 30px;
-            // border: 1px solid gray;
         
             .panel-bar {
                 display: flex;
@@ -127,10 +130,6 @@
                 cursor: pointer;
             
                 .panel-buttons {
-                
-                    // img {
-                    //     cursor: pointer;
-                    // }
 
                     .hide-btn {
                         display: none;
@@ -147,5 +146,18 @@
                 display: block;
             }
         }
+    }
+}
+
+.night-mode-toggle {
+    background-color: lighten(hsl(0, 0%, 0%),20%);
+    
+    h1, h2, h3, p {
+        color:white;
+    }
+
+    .search-box {
+        color: white;
+        background-color: lighten(hsl(0, 0%, 0%),30%);
     }
 }

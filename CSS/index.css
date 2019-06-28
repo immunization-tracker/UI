@@ -687,6 +687,7 @@ footer p {
 @media (max-width: 500px) {
   .help-container h1 {
     font-size: 3rem;
+    margin-top: 2rem;
   }
 }
 .help-container h2 {
@@ -746,20 +747,27 @@ footer p {
   outline: none;
 }
 .help-container .carousel {
+  margin: 4rem 0;
   display: flex;
+  justify-content: center;
 }
-.help-container .cta-img {
-  border: 1px solid #5d348b;
-  width: 60%;
+@media (max-width: 500px) {
+  .help-container .carousel {
+    display: none;
+  }
+}
+.help-container .carousel .img-reveal {
+  display: block;
+  animation: fadeIn 5s;
+}
+.help-container .help-img {
+  border: 2px solid #5d348b;
+  width: 250px;
+  height: 250px;
   opacity: 0.9;
   z-index: 10;
   border-radius: 50%;
   display: none;
-}
-@media (max-width: 500px) {
-  .help-container .cta-img {
-    width: 80%;
-  }
 }
 .help-container .section .tabs-items {
   flex-direction: initial;
@@ -799,6 +807,19 @@ footer p {
 }
 .help-container [data-questions] .panel .toggle-on {
   display: block;
+}
+.night-mode-toggle {
+  background-color: hsl(0, 0%, 20%);
+}
+.night-mode-toggle h1,
+.night-mode-toggle h2,
+.night-mode-toggle h3,
+.night-mode-toggle p {
+  color: white;
+}
+.night-mode-toggle .search-box {
+  color: white;
+  background-color: hsl(0, 0%, 30%);
 }
 .contact-body-container {
   margin: 0 auto;
