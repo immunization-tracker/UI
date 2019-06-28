@@ -1,10 +1,20 @@
-// .team{
-//   border: 1px solid black;
-// }
+.team{
+
+  
+}
 .title-team{
   margin-top:20px;
   text-align: center;
-
+  margin-top: 100px;
+  h1{
+    // border: 1px solid red;
+  }
+  @media @tablet{
+    margin-top: 130px;
+  }
+  @media @phone{
+    margin-top: 100px;
+  }
 }
 
 .team-members{
@@ -29,7 +39,7 @@
             margin: 0 auto;
             width:60%;
             box-shadow: 3px 0 5px grey;
-            
+            max-height: 250px;
           }
       }   
 }
@@ -52,8 +62,11 @@
   border: 2px solid darkblue;
   margin: 0 auto;
   box-shadow: 3px 0 5px grey;
+  border-radius: 5px;
   @media @tablet{
     display: block;
+    background: white;
+    border: none;
   }
   h4{
     font-size: 2rem;

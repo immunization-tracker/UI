@@ -573,12 +573,20 @@ footer p {
     margin: 0 auto;
   }
 }
-.team {
-  border: 1px solid black;
-}
 .title-team {
   margin-top: 20px;
   text-align: center;
+  margin-top: 100px;
+}
+@media (max-width: 800px) {
+  .title-team {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 500px) {
+  .title-team {
+    margin-top: 100px;
+  }
 }
 .team-members {
   margin-top: 20px;
@@ -600,6 +608,7 @@ footer p {
   margin: 0 auto;
   width: 60%;
   box-shadow: 3px 0 5px grey;
+  max-height: 250px;
 }
 .person-selected img {
   z-index: 2;
@@ -617,10 +626,13 @@ footer p {
   border: 2px solid darkblue;
   margin: 0 auto;
   box-shadow: 3px 0 5px grey;
+  border-radius: 5px;
 }
 @media (max-width: 800px) {
   .team-design {
     display: block;
+    background: white;
+    border: none;
   }
 }
 .team-design h4 {

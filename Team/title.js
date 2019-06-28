@@ -1,1 +1,1 @@
-//TweenLite.to('.title-team', 2, {text:"This is the new text", ease:Linear.easeNone});
+TweenMax.to('h1', 2, {left:600});
