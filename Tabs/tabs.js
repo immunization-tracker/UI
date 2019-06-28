@@ -12,7 +12,7 @@ class TabLink {
       // Creates a new instance of the TabItem class
       this.item = new TabItem(this.item)
       
-      // Click event listener, calls select()
+      // Click event handler, calls select()
       this.link.addEventListener('click', event => this.select())
     }
   
