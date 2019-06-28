@@ -30,5 +30,5 @@ class Panel {
     }
 }
     
-const accordions = document.querySelectorAll('[data-accordion]')
+const accordions = document.querySelectorAll('[data-questions]')
 accordions.forEach(accordion => new Accordion(accordion))
