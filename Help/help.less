@@ -1,4 +1,6 @@
 .help-container {
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 4rem;
@@ -14,13 +16,28 @@
         font-size: 2rem;
     }
 
+    .search-question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        .search-bar {
+            width: 300px;
+        }
+    }
+
+    .raq-header {
+        margin-bottom: 2rem;
+    }
+
     .raq {
-        margin: 0 15%;
+        transition: all .3s ease-in-out;
+        margin: 0 15% 3.5rem;
         @media @tablet {
-            margin: 0 10%;
+            margin: 0 10% 3.5rem;
         }
         @media @phone {
-            margin: 0 5%;
+            margin: 0 5% 3.5rem;
         }
     }
 
@@ -66,18 +83,22 @@
     [data-questions] {
         
         .panel {
-            // padding: 30px;
+            
+            padding: 15px 30px;
             // border: 1px solid gray;
         
             .panel-bar {
                 display: flex;
                 justify-content: space-between;
+                background: rgba(118, 54, 148, 0.2);
+                padding: 5px;
+                cursor: pointer;
             
                 .panel-buttons {
                 
-                    button {
-                        cursor: pointer;
-                    }
+                    // img {
+                    //     cursor: pointer;
+                    // }
 
                     .hide-btn {
                         display: none;
@@ -86,6 +107,7 @@
             }
         
             .panel-content {
+                padding-top: 15px;
                 display: none;
             }
         
