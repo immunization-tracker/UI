@@ -798,6 +798,9 @@ footer p {
   border-radius: 15px;
   cursor: pointer;
 }
+.help-container [data-questions] .panel .panel-bar:hover {
+  border: 1px solid #5d348b;
+}
 .help-container [data-questions] .panel .panel-bar .panel-buttons .hide-btn {
   display: none;
 }

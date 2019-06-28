@@ -60,6 +60,5 @@ nightModeButton.addEventListener('click', () => {
     } else {
         nightModeButton.textContent = 'Night Mode'
     }
-
     document.querySelector('body').classList.toggle('night-mode-toggle')
 })
