@@ -592,14 +592,13 @@ footer p {
   margin-top: 20px;
   background: white;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 .pictures {
   width: 30%;
   margin: 0 auto;
   justify-content: space-around;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .pictures .person {
   display: flex;
