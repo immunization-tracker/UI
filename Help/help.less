@@ -1,124 +1,167 @@
 .help-container {
+    display: flex;
+    flex-direction: column;
 
-    .section {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+
+        @media @tablet {
+            font-size: 3.5rem;
+        }
+
+        @media @phone {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
     
-        .tabs {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        
-            .tabs-links {
-                display: flex;
-                margin-top: 15px;
-            }
-            
-            .tabs-link {
-                text-decoration: none;
-                font-size: 1.75rem;
-                color: darkgray;
-                padding: 10px;
-                transition: all .3s ease-in-out;
-                border-bottom: 1px solid transparent;
-                cursor: pointer;
-                    &:hover {
-                    color: gray;
-                }          
-            }
-        
-            .tabs-link-selected {
-                z-index: 2;
-                color: @purple;
-                border-bottom: 1px solid @purple;
-                &:hover {
-                    background-color: @purple;
-                    color: white;
-                }
-            }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+
+        @media @tablet {
+            font-size: 2.8rem;
         }
         
-        .tabs-items {
-            width: 100%;
-            height: auto;
-            display: flex;
-            margin-top: 15px;
-            @media @phone, @tablet {
-                display: flex;
-                flex-direction: column-reverse;
-                align-content: center;
+        @media @phone {
+            font-size: 2.4rem;
+        }
+    }
+    
+    h3 {
+        font-size: 2rem;
+
+        @media @tablet {
+            font-size: 1.8rem;
+        }
+        
+        @media @phone {
+            font-size: 1.6rem;
+        }
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0 3rem;
+
+        .search-icon {
+            padding-right: 10px;
+            cursor: pointer;
+        }
+
+        .search-box {
+            width: 500px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: solid black 1px;
+
+            @media @tablet {
+                width: 450px;
             }
+            
+            @media @phone {
+                width: 400px;
+            }
+
+            &:focus {
+                border-color: @purple;
+                outline: none;
+            }
+        }
+    }
+
+    // @@@@@@@@@@@@@@@@@@@@ Carousel Styling @@@@@@@@@@@@@@@@@@@@
+    .carousel {
+        margin: 4rem 0;
+        display:flex;
+        justify-content: center;
+        @media @phone {
+            display: none;
+        }
+
+        .img-reveal{
+            display: block;
+            animation: fadeIn 5s;
+        }
+    }
+    .help-img {
+        border: 2px solid @purple;
+        width: 250px;
+        height: 250px;
+        opacity: 0.9;
+        z-index:10;
+        border-radius:50%;
+        display:none;
+    }
+
+    // @@@@@@@@@@@@@@@@@@@@ Tabs Styling @@@@@@@@@@@@@@@@@@@@
+    .section {
+        .tabs-items {
+            flex-direction:initial;
         }
         
         .tabs-item {
-            display: none;  
-            height: auto;
-            width: 25%;
-            margin: 25px 15px 25px 30%;
-            transition: all .3s ease-in-out;
-            @media @phone, @tablet {
-                width: 80%;
-                margin: 25px auto;
+            margin: 0 15%;
+            width: 100%;
+            @media @tablet {
+                margin: 0 10%;
+            }
+            @media @phone {
+                margin: 0 5%;
             }
         }
-                
-        .tabs-text {
-            
-                .tabs-item-title {
-                    color: gray;
-                    font-size: 2rem;
-                    margin: -5px 2px 20px 0;
-                    text-align: center;
-                }
+    }
     
-                .tabs-item-description {
-                    width: 98%;
-                    color: gray;
-                    font-size: 1.7rem;
-                    line-height: 2rem;
-                    margin-bottom: 5px;
-                    @media @phone, @tablet {
-                    margin: 0 auto;
-                    width: 90%;
-                    text-align: center;
-                } 
-            }
-    
-            .btn-wrap {
-                width: 100%;
+    // @@@@@@@@@@@@@@@@@@@@ Accordion Styling @@@@@@@@@@@@@@@@@@@@
+    [data-questions] {
+        
+        .panel {
+            padding: 15px 30px;
+        
+            .panel-bar {
                 display: flex;
-                justify-content: center;
-                align-content: center;
-            }
+                justify-content: space-between;
+                align-items:center;
+                background: rgba(118, 54, 148, 0.2);
+                padding: 10px;
+                border-radius: 15px;
+                cursor: pointer;
 
-            .regBtn {
-                width: auto;
-                font-size: 1.6rem;
-                border-style: none;
-                border-radius: 10px;
-                color: white;
-                background-color: @purple;
-                margin-top: 25px;
-                padding: 15px;
-                @media @phone, @tablet {
-                    width: 80%;
+                &:hover {
+                    border: 1px solid @purple;
                 }
-            } 
-        } 
-    
-        .tabs-item-selected {
-            display: block;
-        }
-    
-        .selection-img {
-            border: 1px solid @purple;
-            opacity: .9; 
-            max-height: 235px;
-            max-width: 280px;    
-            height: auto;
-            width: auto;
-            transition: all .5s ease-in-out;
-            @media @phone, @tablet {
-                margin: 0 auto;
+            
+                .panel-buttons {
+
+                    .hide-btn {
+                        display: none;
+                    }
+                }
+            }
+        
+            .panel-content {
+                padding-top: 15px;
+                display: none;
+            }
+        
+            .toggle-on {
+                display: block;
             }
         }
+    }
+}
+
+.night-mode-toggle {
+    background-color: lighten(hsl(0, 0%, 0%),20%);
+    
+    h1, h2, h3, p {
+        color:white;
+    }
+
+    .search-box {
+        color: white;
+        background-color: lighten(hsl(0, 0%, 0%),30%);
     }
 }

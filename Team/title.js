@@ -1,0 +1,1 @@
+TweenMax.to('h1', 2, {left:600});
