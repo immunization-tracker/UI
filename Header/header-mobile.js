@@ -14,6 +14,8 @@ class Mobile{
             if (event.target.closest('nav')) return
             this.hideMobileMenu()
         })
+
+        window.addEventListener('resize', () => this.hideMobileMenu());
     }
     toggleMobileMenu(){
         this.links.forEach(link => link.classList.toggle('reveal-page-links'))

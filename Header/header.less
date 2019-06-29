@@ -147,7 +147,8 @@ header{
                 top: 100%;
                 min-width:150px;
                 overflow: auto;
-                background: linear-gradient(0deg,#32006e,#32006e 45%,#76236c); 
+                border-radius: 5px;
+                background: linear-gradient(0deg,#32006e,#32006e 45%,#76236c);
                 @media @tablet {
                     position:static;
                     background: none;
@@ -158,12 +159,14 @@ header{
                     text-decoration: none;
                     display: block;
                     color: white;
+                    border-bottom: solid black 2px;
                     cursor: pointer;
                     &:hover {
                         text-decoration: underline;
                         color:white;
                     }
                     @media @tablet {
+                        border-bottom: none;
                         &:after {
                             content: " LOGIN";
                         }                         

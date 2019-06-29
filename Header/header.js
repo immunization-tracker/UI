@@ -13,6 +13,8 @@ class Show{
             if (event.target.closest('.dropdown')) return
             this.clickOutMenu()
         })
+
+        window.addEventListener('resize', () => this.clickOutMenu());
     }
     showLinks(){
         this.links.classList.toggle('dropdown-hidden');
