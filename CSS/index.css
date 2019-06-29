@@ -321,6 +321,7 @@ header .header-right .dropdown .dropdown-links {
   top: 100%;
   min-width: 150px;
   overflow: auto;
+  border-radius: 5px;
   background: linear-gradient(0deg, #32006e, #32006e 45%, #76236c);
 }
 @media (max-width: 800px) {
@@ -334,6 +335,7 @@ header .header-right .dropdown .dropdown-links a {
   text-decoration: none;
   display: block;
   color: white;
+  border-bottom: solid black 2px;
   cursor: pointer;
 }
 header .header-right .dropdown .dropdown-links a:hover {
@@ -341,6 +343,9 @@ header .header-right .dropdown .dropdown-links a:hover {
   color: white;
 }
 @media (max-width: 800px) {
+  header .header-right .dropdown .dropdown-links a {
+    border-bottom: none;
+  }
   header .header-right .dropdown .dropdown-links a:after {
     content: " LOGIN";
   }
@@ -707,19 +712,6 @@ footer p {
     font-size: 2.4rem;
   }
 }
-.help-container h3 {
-  font-size: 2rem;
-}
-@media (max-width: 800px) {
-  .help-container h3 {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 500px) {
-  .help-container h3 {
-    font-size: 1.6rem;
-  }
-}
 .help-container .search-bar {
   display: flex;
   justify-content: center;
@@ -760,10 +752,6 @@ footer p {
     display: none;
   }
 }
-.help-container .carousel .img-reveal {
-  display: block;
-  animation: fadeIn 5s;
-}
 .help-container .help-img {
   border: 2px solid #32006e;
   width: 250px;
@@ -772,6 +760,10 @@ footer p {
   z-index: 10;
   border-radius: 50%;
   display: none;
+}
+.help-container .img-reveal {
+  display: block;
+  animation: fadeIn 5s;
 }
 .help-container .section .tabs-items {
   flex-direction: initial;
@@ -790,38 +782,64 @@ footer p {
     margin: 0 5%;
   }
 }
-.help-container [data-questions] .panel {
-  padding: 15px 30px;
-}
-.help-container [data-questions] .panel .panel-bar {
+.help-container .accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   background: rgba(118, 54, 148, 0.2);
   padding: 10px;
   border-radius: 15px;
-  cursor: pointer;
+  margin-top: 2rem;
 }
-.help-container [data-questions] .panel .panel-bar:hover {
+.help-container .accordion-header:first-child {
+  margin-top: 0;
+}
+.help-container .accordion-header:hover {
   border: 1px solid #32006e;
   padding: 9px;
 }
-.help-container [data-questions] .panel .panel-bar .panel-buttons .hide-btn {
+.help-container .accordion-header .accordion-question {
+  font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  .help-container .accordion-header .accordion-question {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .help-container .accordion-header .accordion-question {
+    font-size: 2rem;
+  }
+}
+.help-container .accordion-header .expand-btn {
+  padding-left: 10px;
+}
+.help-container .accordion-header .collapse-btn {
+  padding-left: 10px;
+}
+.help-container .accordion-header .hidden-btn {
   display: none;
 }
-.help-container [data-questions] .panel .panel-content {
-  padding-top: 15px;
-  display: none;
+.help-container .active-header {
+  border: 1px solid #32006e;
+  padding: 9px;
 }
-.help-container [data-questions] .panel .toggle-on {
-  display: block;
+.help-container .accordion-content {
+  display: none;
+  font-size: 1.6rem;
+  padding: 10px;
+  margin: 0 2%;
+  border: 0.5px solid #32006e;
+  border-radius: 0 0 15px 15px;
+  border-top: none;
 }
 .night-mode-toggle {
   background-color: hsl(0, 0%, 20%);
 }
 .night-mode-toggle h1,
 .night-mode-toggle h2,
-.night-mode-toggle h3,
+.night-mode-toggle div,
 .night-mode-toggle p {
   color: white;
 }

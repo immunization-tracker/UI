@@ -66,6 +66,7 @@
 
     <!-- Tabs Section -->
     <section class="section">
+
         <div class="tabs">
 
             <!-- Tab Links -->
@@ -80,200 +81,125 @@
         <!-- Tab Items -->
         <div class="tabs-items">
             
-            <!-- tab 1 -->
+            <!-- parent tab -->
             <div class="tabs-item tabs-item-selected" id="parent" data-tab="1">
                 <div class='tabs-text'>
 
-                    <!-- faq accordion 1 -->
-                    <section class="faq">
-                        <div class="accordion" data-questions data-auto-close='true'>
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Can I add all of my children in one view?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Yes. Under settings in the user dashboard, click on the "Add Another Child" button to add any additional children you may have.</p>
-                                </div>
-                            </div><!-- end of panel -->
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>How do I grant access to my child's physician to edit the records?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Under the child's name, there will be an option called "Grant Access to..". Click on it, and then enter the doctor's name that you want to give write permissions to.</p>
-                                </div>
-                            </div><!-- end of panel -->
-                            
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Will I be notified of my child's next shot that may require multiple doses?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Yes. The website will automatically send an email a month in advance, and then a follow up email the week before the recommended date of the next dose. This way, it allows you to schedule an appointment with your child's doctor in advance.</p>
-                                </div>
-                            </div><!-- end of panel -->  
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Is there a way to upload any handwritten records to the site?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Unfortuntely, only the doctor is able to upload any records for security purposes. Please give your physician the information so that they can upload it to your child's account.</p>
-                                </div>
-                            </div> <!-- end of panel -->
-
+                    <!-- parent faq accordion -->
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="accordion-question">Can I add all of my children in one view?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
                         </div>
-                    </section>
+                        <p class="accordion-content">Yes. Under settings in the user dashboard, click on the "Add Another Child" button to add any additional children you may have.</p>
+
+                        <div class="accordion-header">
+                            <p class="accordion-question">How do I grant access to my child's physician to edit the records?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Under the child's name, there will be an option called "Grant Access to..". Click on it, and then enter the doctor's name that you want to give write permissions to.</p>
+
+                        <div class="accordion-header">
+                            <p class="accordion-question">Will I be notified of my child's next shot that may require multiple doses?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Yes. The website will automatically send an email a month in advance, and then a follow up email the week before the recommended date of the next dose. This way, it allows you to schedule an appointment with your child's doctor in advance.</p>
+                        
+                        <div class="accordion-header">
+                            <p class="accordion-question">Is there a way to upload any handwritten records to the site?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Unfortuntely, only the doctor is able to upload any records for security purposes. Please give your physician the information so that they can upload it to your child's account.</p>
+                    </div><!-- end parent faq accordion -->
+
                 </div>
-            </div>
-                
-            <!-- tab 2 -->
+            </div><!-- end parent tab -->
+
+            <!-- patient tab -->
             <div class="tabs-item" id="patient" data-tab="2">
                 <div class='tabs-text'>
 
-                    <!-- faq accordion 2 -->
-                    <section class="faq">
-                        <div class="accordion" data-questions data-auto-close='true'>
-
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>What do I do if I'm having problems logging in?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Please contact our support line. They will be happy to assist you.</p>
-                                </div>
-                            </div><!-- end of panel -->
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>How can I view the recommended shots to take when going to another country?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Currently, there is no way to do so. But it is a functionality we have on our radar!</p>
-                                </div>
-                            </div><!-- end of panel -->
-
+                    <!-- patient faq accordion -->
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="accordion-question">What do I do if I'm having problems logging in?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
                         </div>
-                    </section>
+                        <p class="accordion-content">Please contact our support line. They will be happy to assist you.</p>
+
+                        <div class="accordion-header">
+                            <p class="accordion-question">How can I view the recommended shots to take when going to another country?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Currently, there is no way to do so. But it is a functionality we have on our radar!</p>
+                    </div><!-- end patient faq section -->
+                    
                 </div>
-            </div>
-                
-            <!-- tab 3 -->
+            </div><!-- end patient tab -->
+
+            <!-- provider tab -->
             <div class="tabs-item" id="provider" data-tab="3">
                 <div class='tabs-text'>
 
-                    <!-- faq accordion 3 -->
-                    <section class="faq">
-                        <div class="accordion" data-questions data-auto-close='true'>
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>What happens if I upload a patient's new record into a different patient's account?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>With our algorithm, we are able to verify if the patient's account name matches with the patient name in the document being uploaded. If it fails, please contact our support line for more assistance.</p>
-                                </div>
-                            </div><!-- end of panel -->
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Can I grant the staff the ability to upload new information?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Yes. However, you will still need to sign your digital signature on any document that a person (that's not you) uploaded before it gets pushed into the patient's account.</p>
-                                </div>
-                            </div><!-- end of panel -->
-                            
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>How accurate is the digital conversion of handwritten records into copiable text?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>It's about 95% accurate. We're always tinkering our algorithm to make it as perfect as possible so that you won't have to worry about inorrect information.</p>
-                                </div>
-                            </div><!-- end of panel -->
-                            
+                    <!-- provider faq accordion-->
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="accordion-question">What happens if I upload a patient's new record into a different patient's account?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
                         </div>
-                    </section>
-                </div>               
-            </div>
+                        <p class="accordion-content">With our algorithm, we are able to verify if the patient's account name matches with the patient name in the document being uploaded. If it fails, please contact our support line for more assistance.</p>
 
-            <!-- tab 4 -->
+                        <div class="accordion-header">
+                            <p class="accordion-question">Can I grant the staff the ability to upload new information?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Yes. However, you will still need to sign your digital signature on any document that a person (that's not you) uploaded before it gets pushed into the patient's account.</p>
+
+                        <div class="accordion-header">
+                            <p class="accordion-question">How accurate is the digital conversion of handwritten records into copiable text?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">It's about 95% accurate. We're always tinkering our algorithm to make it as perfect as possible so that you won't have to worry about inorrect information.</p>  
+                    </div><!-- end provider faq accordion -->
+
+                </div>               
+            </div><!-- end provider tab -->
+
+            <!-- other tab -->
             <div class="tabs-item" id="other" data-tab="4">
                 <div class='tabs-text'>
 
                     <!-- faq accordion 4 -->
-                    <section class="faq">
-                        <div class="accordion" data-questions data-auto-close='true'>
-
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Is this free?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Currently, it is a freeware product. We appreciate any donations, but we're just as happy when you use our site!</p>
-                                </div>
-                            </div><!-- end of panel -->
-                                            
-                            <div class="panel">
-                                <div class="panel-bar">
-                                    <h3>Where's the night mode button?</h3>
-                                    <div class="panel-buttons">
-                                        <i class="fas fa-chevron-down fa-2x panel-btn-open"></i>
-                                        <i class="fas fa-chevron-up fa-2x panel-btn-close hide-btn"></i>
-                                    </div>
-                                </div>
-                                <div class="panel-content">
-                                    <p>Our night mode setting is currently in beta! You can click the button to try it! <button class='night-mode-button'>Night Mode</button></p>
-                                </div>
-                            </div><!-- end of panel -->  
-                            
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <p class="accordion-question">Is this free?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
                         </div>
-                    </section>
+                        <p class="accordion-content">Currently, it is a freeware product. We appreciate any donations, but we're just as happy when you use our site!</p>
+                    
+                        <div class="accordion-header">
+                            <p class="accordion-question">Where's the night mode button?</p>
+                            <i class="fas fa-chevron-down fa-2x expand-btn "></i>
+                            <i class="fas fa-chevron-up fa-2x collapse-btn hidden-btn"></i>
+                        </div>
+                        <p class="accordion-content">Our night mode setting is currently in beta! You can click the button to try it! <button class='night-mode-button'>Night Mode</button></p>
+                    </div>
+
                 </div>               
-            </div>                          
-        </div>
+            </div><!-- end of other tab -->
+            
+        </div><!-- end of tab items -->
+        
     </section><!-- end of tabs section -->
     
 
