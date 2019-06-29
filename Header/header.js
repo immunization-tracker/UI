@@ -1,3 +1,4 @@
+// @@@@@@@@@@@@@@@@@@@@ Desktop Drop Menu @@@@@@@@@@@@@@@@@@@@
 class Show{
     constructor(event){
         this.event = event;
@@ -9,11 +10,13 @@ class Show{
             this.showLinks();
         })
 
+        // Close menu if a click occurs outside of the element
         document.addEventListener('click', event => {
             if (event.target.closest('.dropdown')) return
             this.clickOutMenu()
         })
 
+        // Close menu if browser resizes
         window.addEventListener('resize', () => this.clickOutMenu());
     }
     showLinks(){
@@ -24,4 +27,38 @@ class Show{
     }
 }
 
+// @@@@@@@@@@@@@@@@@@@@ Mobile Menu @@@@@@@@@@@@@@@@@@@@
+class Mobile{
+    constructor(event){
+        this.event = event;
+        this.button = document.querySelector('.button-mobile')
+        this.links = document.querySelectorAll('.page-links')
+        this.loginlinks = document.querySelectorAll('.login-links')
+
+        this.button.addEventListener('click', ()=> {
+            this.toggleMobileMenu();
+        })
+
+        // Close menu if a click occurs outside of the element
+        document.addEventListener('click', event => {
+            if (event.target.closest('.button-mobile')) return
+            if (event.target.closest('nav')) return
+            this.hideMobileMenu()
+        })
+
+        // Close menu if browser resizes
+        window.addEventListener('resize', () => this.hideMobileMenu());
+    }
+    toggleMobileMenu(){
+        this.links.forEach(link => link.classList.toggle('reveal-page-links'))
+        this.loginlinks.forEach(link => link.classList.toggle('reveal-login-links'))
+    }
+    hideMobileMenu(){
+        this.links.forEach(link => link.classList.remove('reveal-page-links'))
+        this.loginlinks.forEach(link => link.classList.remove('reveal-login-links'))
+    }
+
+}
+
 let loginButton = document.querySelectorAll('.dropdown').forEach(event => new Show(event));
+let mobileButton = document.querySelectorAll('.button-mobile').forEach(event => new Mobile(event));
