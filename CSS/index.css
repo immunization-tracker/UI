@@ -881,9 +881,3 @@ footer p {
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
-.contact-body-container .buttons {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 30% 0 15% 0;
-}
