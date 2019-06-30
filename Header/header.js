@@ -62,3 +62,18 @@ class Mobile{
 
 let loginButton = document.querySelectorAll('.dropdown').forEach(event => new Show(event));
 let mobileButton = document.querySelectorAll('.button-mobile').forEach(event => new Mobile(event));
+
+// @@@@@@@@@@@@@@@@@@@@ Hide Mobile Menu on Scroll Down, Appear on Scroll Up @@@@@@@@@@@@@@@@@@@@
+let prevScroll = window.pageYOffset
+
+window.addEventListener('scroll', () => {
+    let displayValue = window.getComputedStyle(document.querySelector('.button-mobile')).getPropertyValue('display')
+    if (displayValue === 'flex') {
+        let menuHeight = document.querySelector('header').offsetHeight
+        let currentScroll = window.pageYOffset
+        if (prevScroll > currentScroll) document.querySelector('header').style.top='0px'
+        else document.querySelector('header').style.top=`-${menuHeight}px`
+        prevScroll=currentScroll
+    }
+    
+})
