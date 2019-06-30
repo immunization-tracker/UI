@@ -104,11 +104,17 @@ header{
             width: 1px;
             height: 14px;
             background: white;
-            display: inline-block;
             margin: 4px 2px 0 2px;
             box-shadow: 0 3px 0 #dcdcdc;
             z-index: 500;
+
             @media @phone {
+                display:none;
+            }
+        }
+
+        .last-inav {
+            @media (max-width: 635px) {
                 display:none;
             }
         }
@@ -178,6 +184,18 @@ header{
                 }
 
                 .login-links {
+                    @media @phone {
+                        display:none;
+                    }
+                }
+
+                
+                .inav {
+                    align-self:center;
+                    display: none;
+                    @media @tablet {
+                        display:block;
+                    }
                     @media @phone {
                         display:none;
                     }
