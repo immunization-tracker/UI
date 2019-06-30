@@ -1,6 +1,15 @@
 .help-container {
     display: flex;
     flex-direction: column;
+    // remove highlight that appears when element is clicked
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    // remove highlight that appears when element is clicked
 
     h1 {
         font-size: 4rem;
@@ -34,6 +43,14 @@
         justify-content: center;
         align-items: center;
         margin: 1rem 0 3rem;
+
+        @media @tablet {
+            margin: 1rem 10% 3rem;
+        }
+
+        @media @phone {
+            margin: 1rem 5% 3rem;
+        }
 
         .search-icon {
             padding-right: 10px;
@@ -87,12 +104,23 @@
     }
 
     // @@@@@@@@@@@@@@@@@@@@ Tabs Styling @@@@@@@@@@@@@@@@@@@@
-    .section {
-        .tabs-items {
+    .help-section {
+
+        .help-tabs-links .help-tabs-link {
+            font-size: 1.75rem;
+            padding: 10px;
+            
+            @media @phone {
+                font-size: 1.6rem;
+                padding: 5px;
+            }
+        }
+
+        .help-tabs-items {
             flex-direction:initial;
         }
         
-        .tabs-item {
+        .help-tabs-item {
             margin: 0 15%;
             width: 100%;
             @media @tablet {

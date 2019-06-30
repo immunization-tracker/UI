@@ -163,6 +163,13 @@ a {
   }
 }
 header {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -432,28 +439,8 @@ header #google_translate_element .goog-te-gadget-icon {
 .cta .cta-break {
   display: none;
 }
-@media (max-width: 625px) {
-  .cta .cta-break {
-    display: block;
-  }
-}
-@media (max-width: 500px) {
-  .cta .cta-break {
-    display: none;
-  }
-}
 @media (max-width: 475px) {
   .cta .cta-break {
-    display: block;
-  }
-}
-@media (max-width: 625px) {
-  .cta .cta-space {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .cta .cta-space {
     display: block;
   }
 }
@@ -715,6 +702,13 @@ footer p {
 .help-container {
   display: flex;
   flex-direction: column;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .help-container h1 {
   font-size: 4rem;
@@ -750,6 +744,16 @@ footer p {
   justify-content: center;
   align-items: center;
   margin: 1rem 0 3rem;
+}
+@media (max-width: 800px) {
+  .help-container .search-bar {
+    margin: 1rem 10% 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .help-container .search-bar {
+    margin: 1rem 5% 3rem;
+  }
 }
 .help-container .search-bar .search-icon {
   padding-right: 10px;
@@ -798,20 +802,30 @@ footer p {
   display: block;
   animation: fadeIn 5s;
 }
-.help-container .section .tabs-items {
+.help-container .help-section .help-tabs-links .help-tabs-link {
+  font-size: 1.75rem;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .help-container .help-section .help-tabs-links .help-tabs-link {
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+}
+.help-container .help-section .help-tabs-items {
   flex-direction: initial;
 }
-.help-container .section .tabs-item {
+.help-container .help-section .help-tabs-item {
   margin: 0 15%;
   width: 100%;
 }
 @media (max-width: 800px) {
-  .help-container .section .tabs-item {
+  .help-container .help-section .help-tabs-item {
     margin: 0 10%;
   }
 }
 @media (max-width: 500px) {
-  .help-container .section .tabs-item {
+  .help-container .help-section .help-tabs-item {
     margin: 0 5%;
   }
 }
