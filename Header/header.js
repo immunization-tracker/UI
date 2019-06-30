@@ -17,7 +17,10 @@ class Show{
         })
 
         // Close menu if browser resizes
-        window.addEventListener('resize', () => this.clickOutMenu());
+        window.addEventListener('resize', () => this.clickOutMenu())
+
+        // Close menu if user scrolls
+        window.addEventListener('scroll', () => this.clickOutMenu())
     }
     showLinks(){
         this.links.classList.toggle('dropdown-hidden');
@@ -48,6 +51,9 @@ class Mobile{
 
         // Close menu if browser resizes
         window.addEventListener('resize', () => this.hideMobileMenu());
+
+        // Close menu if user scrolls
+        window.addEventListener('scroll', () => this.hideMobileMenu())
     }
     toggleMobileMenu(){
         this.links.forEach(link => link.classList.toggle('reveal-page-links'))
