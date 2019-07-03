@@ -43,19 +43,112 @@
         }
     }
 
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 52vh;
+
+        .btn {
+            margin: 0 auto;
+            padding: 15px;
+            
+        }
+    }
+
     .modal {
         position: fixed;
+        display: none;
+        z-index: 1;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.5);
         opacity: 0;
-        visibility: hidden;
         transform: scale(1.1);
         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 1rem 1.5rem;
+            width: 25%;
+            height: auto;
+            border-radius: 0.5rem;
+            
+            .close-button {
+                float: right;
+                font-size: 1.5rem;
+                width: 2rem;
+                line-height: 2rem;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 0.25rem;
+                background-color: lightgray;
+            } &hover {
+                background-color: darkgray;
+            }
+
+            .modal-header {
+                white-space: pre-wrap;
+
+                h1 {
+                    font-size: 3rem;
+                    font-weight: @bld;
+                    margin: 8%;
+                    text-align: left;                
+                }
+
+                p {
+                    font-size: 1.75rem;
+                    font-weight: @lt;
+                    line-height: 2rem;
+                    margin: 8%;
+                    text-align: left;
+                }
+            }
+
+            form {
+                display: none;
+                flex-direction: column;
+                align-content: flex-start; 
+                margin: 8%; 
+                
+                label, input {
+                    display: block;
+                    width: 100%;
+                }
+
+                label {
+                    font-size: 1.25rem;
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    padding: 10px;
+                }
+
+                textarea {
+                    width: 100%;
+                }
+            }
+            
+        }
     }
     
+    .show-modal {
+        opacity: 1;
+        display: block;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+    
+
 
     
 }

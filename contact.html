@@ -58,19 +58,39 @@
         <div class="contact-img-container">
             <img class="contact-us-img" src="../Images/Contact/contact.svg">
         </div>
-        	
-        <button class="trigger">Click here to trigger the modal!</button>
-        <div class="modal">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <h1>Hello, I am a modal!</h1>
-            </div>
-        </div>
         
         <div class="buttons">
             <button class="btn">CONTACT US</button>
             <button class="btn">CUSTOMER SUPPORT</button>
             <button class="btn">PROVIDER SUPPORT</button>        
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-header"></div>
+                <div class="form-wrapper">
+                    <form>
+                        <label>
+                            Full Name 
+                            <input id="name" name="name" type="text" >
+                        </label>
+                        <label>
+                            Email Address
+                            <input id="email" name="email" type="text">
+                        </label>
+                        <label>
+                            Phone Number
+                            <input id="phone" name="phone" type="text">
+                        </label>
+                        <label>
+                            How May We Help You?
+                            <textarea id="message" name="message" rows="10"></textarea>
+                        </label>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
         </div>
 
         <footer>
