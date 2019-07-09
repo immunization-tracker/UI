@@ -846,7 +846,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   background-image: url('/Images/Contact/contact-cta.jpg');
   background-repeat: no-repeat;
