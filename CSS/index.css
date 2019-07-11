@@ -846,7 +846,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   background-image: url('/Images/Contact/contact-cta.jpg');
   background-repeat: no-repeat;
@@ -870,8 +870,93 @@ footer p {
   height: auto;
 }
 .contact-body-container .buttons {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  margin: 30% 0 15% 0;
+  justify-content: space-evenly;
+  margin-top: 52vh;
+}
+.contact-body-container .buttons .btn {
+  margin: 0 auto;
+  padding: 15px;
+}
+.contact-body-container .modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.contact-body-container .modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 25%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.contact-body-container .modal .modal-content .close-button {
+  float: right;
+  font-size: 1.5rem;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.contact-body-container .modal .modal-contenthover {
+  background-color: darkgray;
+}
+.contact-body-container .modal .modal-content .modal-header {
+  white-space: pre-wrap;
+}
+.contact-body-container .modal .modal-content .modal-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 8%;
+  text-align: left;
+}
+.contact-body-container .modal .modal-content .modal-header p {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 8%;
+  text-align: left;
+}
+.contact-body-container .modal .modal-content form {
+  display: none;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 8%;
+}
+.contact-body-container .modal .modal-content form label,
+.contact-body-container .modal .modal-content form input {
+  display: block;
+  width: 100%;
+}
+.contact-body-container .modal .modal-content form label {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.contact-body-container .modal .modal-content form input {
+  padding: 10px;
+}
+.contact-body-container .modal .modal-content form textarea {
+  width: 100%;
+}
+.contact-body-container .show-modal {
+  opacity: 1;
+  display: block;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
