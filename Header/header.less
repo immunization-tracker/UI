@@ -7,7 +7,7 @@ header{
     position: fixed;
     top:0; 
     z-index: 100;
-    box-shadow: 0px 2px 5px grey;
+    box-shadow: 0px 1px 5px grey;
     // .box(pink);
     @media @tablet{
         flex-direction: column;
@@ -17,6 +17,8 @@ header{
         display: flex;
 
         .button-mobile{
+            color:white;
+            padding: 5px 0;
             display:none;
             @media @phone{
                 display: flex;
@@ -102,11 +104,17 @@ header{
             width: 1px;
             height: 14px;
             background: white;
-            display: inline-block;
             margin: 4px 2px 0 2px;
             box-shadow: 0 3px 0 #dcdcdc;
             z-index: 500;
+
             @media @phone {
+                display:none;
+            }
+        }
+
+        .last-inav {
+            @media (max-width: 635px) {
                 display:none;
             }
         }
@@ -145,7 +153,8 @@ header{
                 top: 100%;
                 min-width:150px;
                 overflow: auto;
-                background: linear-gradient(0deg,#32006e,#32006e 45%,#76236c); 
+                border-radius: 5px;
+                background: linear-gradient(0deg,#32006e,#32006e 45%,#76236c);
                 @media @tablet {
                     position:static;
                     background: none;
@@ -156,12 +165,14 @@ header{
                     text-decoration: none;
                     display: block;
                     color: white;
+                    border-bottom: solid black 2px;
                     cursor: pointer;
                     &:hover {
                         text-decoration: underline;
                         color:white;
                     }
                     @media @tablet {
+                        border-bottom: none;
                         &:after {
                             content: " LOGIN";
                         }                         
@@ -173,6 +184,18 @@ header{
                 }
 
                 .login-links {
+                    @media @phone {
+                        display:none;
+                    }
+                }
+
+                
+                .inav {
+                    align-self:center;
+                    display: none;
+                    @media @tablet {
+                        display:block;
+                    }
                     @media @phone {
                         display:none;
                     }

@@ -1,53 +1,38 @@
-// @@@@@@@@@@@@@@@@@@@@ Accordion for Questions @@@@@@@@@@@@@@@@@@@@
-class Accordion {
-    constructor(accordion) {
-        this.accordion = accordion
-        this.autoClose = accordion.dataset.autoClose === 'true' ? true : false
-        this.panels = accordion.querySelectorAll('.panel')
-        this.panels.forEach(panel => new Panel(panel, this))
+// @@@@@@@@@@@@@@@@@@@@ Accordion @@@@@@@@@@@@@@@@@@@@
+const expandBtn = document.querySelectorAll('.expand-btn')
+const collapseBtn = document.querySelectorAll('.collapse-btn')
 
-        document.addEventListener('click', event => {
-            if (event.target.closest('.accordion')) return
-            this.collapse()
-        })
-    }
-      
-    collapse() {
-        if (this.autoClose) {
-            const currentPanel = this.accordion.querySelector('.panel-content.toggle-on')
-            if (currentPanel) currentPanel.classList.remove('toggle-on')
-        }
-    }
-}
-    
-class Panel {
-    constructor(panel, parentAccordion) {
-        this.parentAccordion = parentAccordion
-        this.openButton = panel.querySelector('.panel-btn-open')
-        this.closeButton = panel.querySelector('.panel-btn-close')
-        this.panelContent = panel.querySelector('.panel-content')
-        this.panelBar = panel.querySelector('.panel-bar')
+$(".accordion").on("click", ".accordion-header", function() {
 
-        this.panelBar.addEventListener('click', () => this.togglePanel())
-
-        document.addEventListener('click', event => {
-            if (event.target.closest('.accordion')) return
-            this.openButton.classList.remove('hide-btn')
-            this.closeButton.classList.add('hide-btn')
-        })
-
+    // if border is highlighted when clicked, close the panel and do nothing else
+    if ($(this).hasClass('active-header')) {
+        $(this).toggleClass("active-header").next().slideToggle()
+        $(this).find('.expand-btn').toggleClass('hidden-btn')
+        $(this).find('.collapse-btn').toggleClass('hidden-btn')
+    } else { // otherwise, reset the other panels (collapse all) and then open clicked panel
+        // resets all panels
+        $('.accordion-header').removeClass("active-header").next().slideUp()
+        expandBtn.forEach(item => item.classList.remove('hidden-btn'))
+        collapseBtn.forEach(item => item.classList.add('hidden-btn'))
+        // turn on panel
+        $(this).toggleClass("active-header").next().slideToggle()
+        $(this).find('.expand-btn').toggleClass('hidden-btn')
+        $(this).find('.collapse-btn').toggleClass('hidden-btn')
     }
-    
-    togglePanel() {
-        this.parentAccordion.collapse()
-        this.panelContent.classList.toggle('toggle-on')
-        this.openButton.classList.toggle('hide-btn')
-        this.closeButton.classList.toggle('hide-btn')
-    }
-}
-    
-const accordions = document.querySelectorAll('[data-questions]')
-accordions.forEach(accordion => new Accordion(accordion))
+})
+
+document.addEventListener('click', event => {
+    if ((event.target.closest('.accordion-header')) || (event.target.closest('.accordion-content'))) return
+    $('.accordion-header').removeClass("active-header").next().slideUp()
+    expandBtn.forEach(item => item.classList.remove('hidden-btn'))
+    collapseBtn.forEach(item => item.classList.add('hidden-btn'))
+})
+
+window.addEventListener('resize', event => {
+    $('.accordion-header').removeClass("active-header").next().slideUp()
+    expandBtn.forEach(item => item.classList.remove('hidden-btn'))
+    collapseBtn.forEach(item => item.classList.add('hidden-btn'))
+})
 
 // @@@@@@@@@@@@@@@@@@@@ Search Bar @@@@@@@@@@@@@@@@@@@@
 document.querySelector('.search-icon').addEventListener('click', () => alert('Search functionality currently down. Please try again later.'))

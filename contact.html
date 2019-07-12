@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contact Us</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>         
-        <script type="text/javascript" src="./Header/header.js" async></script>
-        <script type="text/javascript" src="./Translate/translate.js" async></script>
-        <script type="text/javascript" src="./Contact/contact.js" async></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://kit.fontawesome.com/b81a3bdaea.js" async></script> 
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>         
+    <script type="text/javascript" src="./Header/header.js" async></script>
+    <script type="text/javascript" src="./Translate/translate.js" async></script>
+    <script type="text/javascript" src="./Contact/contact.js" async></script>
+</head>
 
 <header>
-        <!-- left half of header-->
-        <div class="header-left">
-            <div class="button-mobile">
-            </div> 
-            <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
-        </div>   
-        
-        <!-- right half of header-->
-        <div class="header-right">
-            <nav>
-                <a href="index.html" >HOME</a> 
-                <i class="inav"></i>
-                <a href="teammates.html" >TEAM</a>
-                <i class="inav"></i>
-                <a href="contact.html">CONTACT</a>
-                <i class="inav"></i>
-                <a href="help.html">HELP</a>
-                <i class="inav"></i>
-                <div class='dropdown'>
-                    <div class="dropdown-button">
-                        <a href='#'>LOGIN</a> 
-                    </div>  
-                    <div class="dropdown-links dropdown-hidden">
-                        <a href="https://app-immunization-tracker.netlify.com/">PROVIDER</a>
-                        <a href="https://app-immunization-tracker.netlify.com/">PATIENT</a>
-                    </div>
-                </div>     
-            </nav>
-            <!-- Allow the website to be translated into other languages via Google-->
-            <div id="google_translate_element"></div>
-        </div>
-    </header>
+    <!-- left half of header-->
+    <div class="header-left">
+        <i class="fas fa-bars fa-3x button-mobile"></i>
+        <img class='logo' src="../Images/Logo/caduceus-white.svg"> 
+    </div>   
+    
+    <!-- right half of header-->
+    <div class="header-right">
+        <nav>
+            <a class='page-links' href="index.html" >HOME</a> 
+            <i class="inav"></i>
+            <a class='page-links' href="teammates.html" >TEAM</a>
+            <i class="inav"></i>
+            <a class='page-links' href="contact.html">CONTACT</a>
+            <i class="inav"></i>
+            <a class='page-links' href="help.html">HELP</a>
+            <i class="inav last-inav"></i>
+            <div class='dropdown'>
+                <div class="dropdown-button">
+                    <a>LOGIN</a> 
+                </div>  
+                <div class="dropdown-links dropdown-hidden">
+                    <a class='login-links' href="https://app-immunization-tracker.netlify.com/">PROVIDER</a>
+                    <i class="inav"></i>
+                    <a class='login-links' href="https://app-immunization-tracker.netlify.com/">PATIENT</a>
+                </div>
+            </div>     
+        </nav>
+        <!-- Allow the website to be translated into other languages via Google-->
+        <div id="google_translate_element"></div>
+    </div>
+</header>
 
-    <body class="contact-body-container">
-        
-        <div class="contact-cta">
-            <h1>GET IN TOUCH!</h1>
-        </div>
+<body class="contact-body-container">
+    
+    <div class="contact-cta">
+        <h1>GET IN TOUCH!</h1>
+    </div>
 
-        <div class="contact-img-container">
-            <img class="contact-us-img" src="../Images/Contact/contact.svg">
-        </div>
-        
-        <div class="buttons">
-            <button class="btn">CONTACT US</button>
-            <button class="btn">CUSTOMER SUPPORT</button>
-            <button class="btn">PROVIDER SUPPORT</button>        
-        </div>
+    <div class="contact-img-container">
+        <img class="contact-us-img" src="../Images/Contact/contact.svg">
+    </div>
+    
+    <div class="buttons">
+        <button class="btn">CONTACT US</button>
+        <button class="btn">CUSTOMER SUPPORT</button>
+        <button class="btn">PROVIDER SUPPORT</button>        
+    </div>
 
         <div class="modal">
             <div class="modal-content">
@@ -77,6 +78,6 @@
             <p>Copyright 2019 Immunization Tracker. All rights reserved.</p>
         </footer>
 
-    </body>
+</body>
 
 </html>

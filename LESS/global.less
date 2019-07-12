@@ -7,6 +7,14 @@
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 62.5%;
+	// remove highlight that appears when element is clicked
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -36,7 +44,11 @@ p,a {
 		margin-top: 110px;
 	}
 
+	@media (max-width: 640px) {
+		margin-top: 155px;
+	}
+
 	@media @phone {
-		margin-top: 32px;
+		margin-top: 40px;
 	}
 }   
